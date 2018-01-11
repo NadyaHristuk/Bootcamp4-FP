@@ -14,6 +14,12 @@ $background-word:rgba(0, 0, 0, .05);
     @return ($pix/16)+rem;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .title-main {
     font-family: "AcromExtrabold" ,sans-serif;
         font-size: rem(100);
