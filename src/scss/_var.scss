@@ -14,6 +14,26 @@ $background-word:rgba(0, 0, 0, .05);
     @return ($pix/16)+rem;
 }
 
+@font-face {
+    font-family: "AcromBold";
+    src: url("../fonts/Acrom W00 Bold.otf");
+}
+@font-face {
+    font-family: "AcromExtrabold";
+    src: url("../fonts/Acrom W00 ExtraBold.otf");
+}
+@font-face {
+    font-family: "HammersmithOne";
+    src: url("../fonts/Acrom W00 Medium.otf");
+}
+@font-face {
+    font-family: "Acrom";
+    src: url("../fonts/Acrom W00 Regular.otf");
+}
+@font-face {
+    font-family: "HammersmithOne";
+    src: url("../fonts/Light.otf");
+}
 * {
     margin: 0;
     padding: 0;
@@ -57,14 +77,14 @@ $background-word:rgba(0, 0, 0, .05);
     font-size: rem(16);
     text-transform: uppercase;
     line-height: rem(24);
-    color: $main-text; 
+    color: $main-text;
 }
 .text-small {
     font-family: "Acrom" ,sans-serif;
     font-size: rem(14);
     text-transform: uppercase;
     line-height: rem(21);
-    color: $main-text; 
+    color: $main-text;
 }
 
 .button {
