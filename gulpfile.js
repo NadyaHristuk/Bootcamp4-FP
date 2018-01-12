@@ -31,7 +31,7 @@ gulp.task('html', () => {
 // Создаем таск для сборки css файлов
 gulp.task('css', () => {
   // Берем только файл styles.scss в папке src, в который импортируеются паршалы
-  return gulp.src('./src/sass/main.scss')
+  return gulp.src('./src/scss/main.scss')
     // Преобразовываем sass в css
     .pipe(sass().on('error', sass.logError))
     // Создаем вендорные префиксы
@@ -88,7 +88,7 @@ gulp.task('watch', () => {
   // Следим за изменениями в любом html файле и вызываем таск 'html' на каждом изменении
   gulp.watch('./src/**/*.html', ['html']);
   // Следим за изменениями в любом sass файле и вызываем таск 'css' на каждом изменении
-  gulp.watch('./src/sass/**/*.scss', ['css']);
+  gulp.watch('./src/scss/**/*.scss', ['css']);
   // Следим за изменениями картинок и вызываем таск 'img' на каждом изменении
   gulp.watch('./src/images/**/*.*', ['img']);
   // Следим за изменениями в шрифтах и вызываем таск 'fonts' на каждом изменении
