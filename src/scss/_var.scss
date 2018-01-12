@@ -87,23 +87,5 @@ $background-word:rgba(0, 0, 0, .05);
     color: $main-text;
 }
 
-.button {
-    padding: rem(21) rem(24);
-    font-size: rem(12);
-    text-transform: uppercase;
-    letter-spacing: rem(1);
-    background-color: $button;
-    display: block;
-}
 
-.button:hover {
-    box-shadow: 0 8px 43px 0 rgba(255, 107, 8, 0.59);
-}
-
-.button-small {
-    background-color: $button;
-    display: block;
-    width: rem(26);
-    height: rem(26);
-}
 
