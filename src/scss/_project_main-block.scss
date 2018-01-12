@@ -1,5 +1,23 @@
-.main {
-    width: 480px;
-    background-color: #eee;
+.b_main {
+    min-width: rem(320);
+    max-width: rem(1440);
+    padding: 1rem;
+}
+
+.title-main {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.text-small {
+    font-size: 0.575rem;
+}
+.b_project {
+    position: relative;
+}
+.b_project__link {
+    color:  $button;
+    font-size: rem(12);
+    position: absolute;
+    bottom: rem(-20);
 }
 

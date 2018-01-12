@@ -39,7 +39,11 @@ $background-word:rgba(0, 0, 0, .05);
     padding: 0;
     box-sizing: border-box;
 }
-
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
 .title-main {
     font-family: "AcromExtrabold" ,sans-serif;
         font-size: rem(100);
