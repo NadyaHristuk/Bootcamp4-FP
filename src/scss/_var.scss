@@ -23,17 +23,17 @@ $background-word:rgba(0, 0, 0, .05);
     src: url("../fonts/Acrom W00 ExtraBold.otf");
 }
 @font-face {
-    font-family: "HammersmithOne";
+    font-family: "AcromMedium";
     src: url("../fonts/Acrom W00 Medium.otf");
 }
 @font-face {
     font-family: "Acrom";
     src: url("../fonts/Acrom W00 Regular.otf");
 }
-@font-face {
-    font-family: "HammersmithOne";
-    src: url("../fonts/Light.otf");
-}
+//@font-face {
+//    font-family: "HammersmithOne";
+//    src: url("../fonts/Light.otf");
+//}
 * {
     margin: 0;
     padding: 0;

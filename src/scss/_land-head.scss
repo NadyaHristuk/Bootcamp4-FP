@@ -1,0 +1,27 @@
+.c-header{
+    background-image: url("../images/");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+//Доделать шрифт и размер
+.c-header__h{
+    color: $dark-blue;
+}
+.c-header__title{
+    font-size: rem(150);
+    line-height: rem(160);
+    //color: $white;
+    width: rem(450);
+    text-transform: uppercase;
+    font-family: AcromExtrabold;
+}
+.c-header__brace{
+    font-family: AcromMedium;
+}
+.c-header__history{
+    font-family: Acrom;
+    width: rem(247);
+    line-height: rem(24);
+    font-size: rem(16);
+}
+
