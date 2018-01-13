@@ -1,0 +1,20 @@
+.c-container {
+    width: rem(1920);
+    height: rem(1058);
+}
+
+.space {
+    display: block;
+    width: rem(465);
+    height: rem(557);
+}
+
+.c-block-col__graduate::before {
+    display: block;
+    content: '';
+    width: rem(20);
+    height: rem(20);
+    background-color: #0E1116;
+    margin: rem(10)rem(20);
+}
+
