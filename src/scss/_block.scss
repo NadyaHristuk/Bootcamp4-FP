@@ -1,20 +1,62 @@
+/* Page 'CONTACTS, bottom'*/
 .a-contact__wrapper {
     min-width: rem(320);
     max-width: rem(1440);
     margin: 0 auto;
+    padding: 0 rem(10);
 
 }
 
 .a-portret__wrapper {
-    //width: ;
+    display: inline-block;
 }
 
-.a-portret__photo {
+.a-portret-photo {
     width: rem(98);
     height: rem(98);
+    position: relative;
+
 }
+/* Contacts of our VIP */
+.a-portret__content {
+    font-family: Acrom;
+    text-align: left;
+    display: inline-block;
+    width: rem(190);
 
-
+}
+.a-portret__content p:nth-child(1) {
+    color:  $title;
+    font-size: rem(18);
+    font-weight: 700;
+    line-height: rem(24);
+}
+.a-portret__content p:nth-child(2){
+    color:  #ffffff;
+    font-size: rem(12);
+    font-weight: 500;
+    line-height: rem(24);
+    background-color: $title;
+    display: inline;
+}
+.a-portret__content p:nth-child(3), p:nth-child(5) {
+    color:  #6b6f7a;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(18);
+}
+.a-portret__content p:nth-child(4){
+    olor:  $title;
+    font-size: (14);
+    font-weight: 700;
+    line-height: rem(24);
+}
+.a-portret__content p:nth-child(5){
+    line-height: rem(21);
+}
+.a-portret__content p:nth-child(6){
+    color: $button;
+}
 
 
 
