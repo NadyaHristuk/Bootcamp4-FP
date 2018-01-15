@@ -21,7 +21,7 @@
 }
 
 
-.a-portret__wrapper {
+.a-portret {
     display: inline-flex;
     margin:0 auto rem(39);
 
@@ -42,50 +42,44 @@
     text-align: left;
     display: inline-block;
     width: rem(200);
+    line-height: rem(21);
 
 }
 .a-name {
     color:  $title;
     font-size: rem(18);
-    font-weight: 700;
-    line-height: rem(24);
+    font-weight: 900;
+
 }
 .a-job {
     color:  #ffffff;
     font-size: rem(12);
     font-weight: 500;
-    line-height: rem(24);
     background-color: $title;
-    display: inline;
+    display: inline-block;
+
 }
 .a-role-in-company, .a-email-contact {
     color:  #6b6f7a;
     font-size: rem(14);
     font-weight: 400;
-    line-height: rem(18);
 }
-.a-email-contact {
-    line-height: rem(21);
-}
+
+
 
 .a-wrapped-email {
     color:  $title;
     font-size: rem(14);
-    font-weight: 700;
-    line-height: rem(24);
+    font-weight: 900
 }
 
-.a-portret__content p:nth-child(6){
+.a-contact-fb{
     color: $button;
 }
 
 
 
 @media (min-width: 480px) {
-    .a-contact__wrapper {
-
-
-    }
 
 }
 
@@ -95,8 +89,43 @@
     .a-lesser-content__wrapper {
         justify-content: space-between;
     }
+    .a-name {
+        margin-bottom: rem(11);
+    }
+
+    .a-role-in-company, .a-email-contact {
+        padding-top: rem(14);
+        padding-bottom: rem(18);
+    }
+
+    .a-email-contact {
+        padding-top: 0;
+    }
+
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .a-portret {
+        flex-basis: 30%;
+    }
+    .a-name {
+        margin-bottom: rem(16);
+    }
 
-@media (min-width: 1440px) {}
+    .a-role-in-company, .a-email-contact {
+        padding-top: rem(20);
+        padding-bottom: rem(26);
+    }
+
+    .a-email-contact {
+        padding-top: 0;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+    .a-portret {
+        flex-basis: 30%;
+    }
+}
