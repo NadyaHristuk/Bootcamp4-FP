@@ -88,9 +88,8 @@
         text-align: left;
         font-size: rem(48);
     }
-    .b_project:nth-child(2n) {
+    .b_project:nth-child(2n+1) {
         flex-direction: row-reverse;
-        background-color: #efe;
     }
     .b_project {
         justify-content: space-evenly;
@@ -98,6 +97,9 @@
     }
     .b_project__description {
         flex-basis: 40%;
+    }
+    .b_project__link {
+        font-size: 1rem;
     }
     .text-small {
         margin: 40px 0;
@@ -115,11 +117,4 @@
     .text-small {
         font-size: rem(14);
     }
-    .b_project:first-child,
-    .b_project:last-child {
-        width: 90%;
-        margin: 0 auto 9.375rem;
-    }
-
-
 }
