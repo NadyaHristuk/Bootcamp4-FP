@@ -2,9 +2,32 @@
     min-width: rem(320);
     max-width: rem(1440);
     padding: 1rem;
+    position: relative;
 }
-
-.title-main {
+.b_projects {
+    //position: absolute;
+    //top: 50%;
+    //left: 52%;
+    //transform: translate(-50%, -50%);
+    display: flex;
+    margin: auto;
+    height: 0;
+}
+.b_projects:before {
+    content: "projects";
+    text-transform: uppercase;
+    font-family: "Acrom";
+    font-size: rem(200);
+    font-weight: bold;
+    transform: rotate(90deg);
+    display: none;
+    color:  rgba(0, 0, 0, 0.1);
+    margin: auto;
+    //position: absolute;
+    //top: 25%;
+    //left: -60%;
+}
+.sub-title {
     font-size: 1.3rem;
     text-align: center;
 }
@@ -13,11 +36,90 @@
 }
 .b_project {
     position: relative;
+    margin-bottom: rem(10);
 }
 .b_project__link {
     color:  $button;
     font-size: rem(12);
     position: absolute;
     bottom: rem(-20);
+    text-decoration: none;
+
+}
+.b_project__link:before {
+    content: "\f178";
+    font-family: "fontawesome";
+    margin-right: rem(13);
 }
 
+
+@media (min-width: 768px) {
+    .b_projects:before {
+        display: block;
+        font-size: 8.5rem;
+        margin-top: rem(320);
+    }
+    .b_project {
+        display: flex;
+        justify-content: space-between;
+    }
+    .b_project__description {
+        flex-basis: 50%;
+    }
+    .b_project__img {
+        flex-basis: 40%;
+    }
+    .b_project__link {
+        position: static;
+    }
+}
+
+@media (min-width: 960px) {
+    .b_projects:before {
+    }
+}
+
+@media (min-width: 1024px) {
+    .b_projects:before {
+        font-size: 12.5rem;
+        margin-top: 34rem;
+    }
+    .sub-title {
+        text-align: left;
+        font-size: rem(48);
+    }
+    .b_project:nth-child(2n) {
+        flex-direction: row-reverse;
+        background-color: #efe;
+    }
+    .b_project {
+        justify-content: space-evenly;
+        margin-bottom: rem(150);
+    }
+    .b_project__description {
+        flex-basis: 40%;
+    }
+    .text-small {
+        margin: 40px 0;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .b_main:before {
+        font-size: 12.5rem;
+    }
+    .sub-title {
+        width: 80%;
+    }
+    .text-small {
+        font-size: rem(14);
+    }
+    .b_project:first-child,
+    .b_project:last-child {
+        width: 90%;
+        margin: 0 auto 9.375rem;
+    }
+
+
+}
