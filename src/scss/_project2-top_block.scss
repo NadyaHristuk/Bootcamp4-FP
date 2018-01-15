@@ -14,5 +14,37 @@
     margin-left: 9%;
     margin-bottom: rem(20);
 }
+.b-text--first2 {
+    font-size: 20px;
+    padding-bottom: 80px;
+    padding-top: 33px;
+}
+@media (min-width: 480px) {
+.b-project-top-block2 {
+        padding: 0 rem(25)  rem(20) rem(25) ;}
+.b-title-main--white2 {
+        margin-left: 20%;
+    }
+}
+@media (min-width: 768px) {
+    .b-project-top-block2 {
+        padding: 0  rem(35) rem(64) rem(64);
 
+    }
+    .title-main--white2{
+        margin-left: 13%;
+        margin-bottom: 3.25rem;
+    }
+    .b-text--first2 {
+        text-align: center;
+        //width: 44%;
+    }
+
+}
+@media (min-width: 960px) {
+
+}
+@media (min-width: 1024px) {
+padding-top: rem(280);
+}
 
