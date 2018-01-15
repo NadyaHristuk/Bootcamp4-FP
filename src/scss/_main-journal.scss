@@ -110,28 +110,52 @@
 
 @media (min-width: 768px) {
     .b-journal-top-text {
-        font-size: 5.7rem;
+        font-size: rem(85);
         line-height: rem(80);
+        width: 70%;
+        margin: 0 auto;
     }
 
     .b-journal__media {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 }
 
 @media (min-width: 960px) {
+
+    .b-main-journal {
+        padding: 0 rem(10);
+    }
+
     .b-journal-top-text {
-        font-size: 7rem;
+        font-size: rem(90);
         line-height: rem(100);
+        text-align: left;
+        margin: 0;
+        width: 60%;
+
+    }
+
+    .b-journal__media {
+        justify-content: space-between;
+    }
+
+    .b-journal-article {
+        flex-basis: 45%;
     }
 }
 
 @media (min-width: 1024px) {
     .b-journal-top-text {
-        font-size: 7.6rem;
-        line-height: rem(100);
+        font-size: rem(100);
+        line-height: rem(116);
+    }
+}
+@media (min-width: 1440px) {
+    .b-journal-top-text {
+        width: 40%;
+        margin-bottom: rem(90);
     }
 }
