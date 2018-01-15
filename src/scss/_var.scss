@@ -1,6 +1,6 @@
 // colors
 $white: #fff;
-$title: #000;
+$title: #000000;
 $button: #ff6b08;
 $main-text: #6b6f7a;
 $dark-blue:#1b4371;
@@ -67,7 +67,7 @@ $background-word:rgba(0, 0, 0, .05);
 .text-bold {
     font-family: "AcromBold" ,sans-serif;
     font-size: rem(16);
-    text-transform: uppercase;
+    //text-transform: uppercase;
     line-height: rem(24);
     color: $title;
 }
@@ -75,7 +75,7 @@ $background-word:rgba(0, 0, 0, .05);
 .text {
     font-family: "Acrom" ,sans-serif;
     font-size: rem(16);
-    text-transform: uppercase;
+    //text-transform: uppercase;
     line-height: rem(24);
     color: $main-text;
 }
