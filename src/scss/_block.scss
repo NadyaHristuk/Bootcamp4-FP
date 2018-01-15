@@ -1,37 +1,55 @@
 /* Page 'CONTACTS, bottom'*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
 .a-contact__wrapper {
     min-width: rem(320);
     max-width: rem(1440);
-    margin: 0 auto;
-    padding: 0 rem(10);
+    padding: rem(10) rem(10);
+}
+
+.a-lesser-contact__wraper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.a-portret__wrapper {
+    display: inline-flex;
+    margin:0 auto rem(39);
 
 }
 
-.a-portret__wrapper {
-    display: inline-block;
+.a-portret__wrapper:last-child {
+    margin-bottom: rem(20);
 }
 
 .a-portret-photo {
     width: rem(98);
     height: rem(98);
-    position: relative;
-
+    margin-right: rem(8);
 }
 /* Contacts of our VIP */
 .a-portret__content {
     font-family: Acrom;
     text-align: left;
     display: inline-block;
-    width: rem(190);
+    width: rem(200);
 
 }
-.a-portret__content p:nth-child(1) {
+.a-name {
     color:  $title;
     font-size: rem(18);
     font-weight: 700;
     line-height: rem(24);
 }
-.a-portret__content p:nth-child(2){
+.a-job {
     color:  #ffffff;
     font-size: rem(12);
     font-weight: 500;
@@ -39,32 +57,44 @@
     background-color: $title;
     display: inline;
 }
-.a-portret__content p:nth-child(3), p:nth-child(5) {
+.a-role-in-company, .a-email-contact {
     color:  #6b6f7a;
     font-size: rem(14);
     font-weight: 400;
     line-height: rem(18);
 }
-.a-portret__content p:nth-child(4){
-    olor:  $title;
-    font-size: (14);
+.a-email-contact {
+    line-height: rem(21);
+}
+
+.a-wrapped-email {
+    color:  $title;
+    font-size: rem(14);
     font-weight: 700;
     line-height: rem(24);
 }
-.a-portret__content p:nth-child(5){
-    line-height: rem(21);
-}
+
 .a-portret__content p:nth-child(6){
     color: $button;
 }
 
 
 
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+    .a-contact__wrapper {
+
+
+    }
+
+}
 
 @media (min-width: 768px) {}
 
-@media (min-width: 960px) {}
+@media (min-width: 960px) {
+    .a-lesser-content__wrapper {
+        justify-content: space-between;
+    }
+}
 
 @media (min-width: 1024px) {}
 
