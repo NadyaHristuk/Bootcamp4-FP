@@ -1,0 +1,39 @@
+
+.a-section {
+    background-color: #f7f7f7;
+    padding: rem(20);
+    margin: auto;
+
+}
+
+.a-section__title {
+    font-family: "Acrom" ,sans-serif;
+    font-size: rem(16);
+    color: $titl;
+    text-align: center;
+    margin-bottom: rem(50);
+}
+
+.text__span {
+    display: block;
+}
+
+.a-pic__slider {
+    margin: auto;
+}
+
+.a-section__pic {
+
+    margin: rem(20) 0;
+}
+
+.a-section__text {
+    font-family: "Acrom" ,sans-serif;
+    font-size: rem(14);
+    color: $titl;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+}
