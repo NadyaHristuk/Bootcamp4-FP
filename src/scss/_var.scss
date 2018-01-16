@@ -64,6 +64,14 @@ $background-word:rgba(0, 0, 0, .05);
     color: $title;
 }
 
+.title-fourth {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(18);
+    text-transform: uppercase;
+    line-height: rem(30);
+    color: $title;
+}
+
 .text-bold {
     font-family: "AcromBold" ,sans-serif;
     font-size: rem(16);
@@ -75,14 +83,12 @@ $background-word:rgba(0, 0, 0, .05);
 .text {
     font-family: "Acrom" ,sans-serif;
     font-size: rem(16);
-    text-transform: uppercase;
     line-height: rem(24);
     color: $main-text;
 }
 .text-small {
     font-family: "Acrom" ,sans-serif;
     font-size: rem(14);
-    text-transform: uppercase;
     line-height: rem(21);
     color: $main-text;
 }
@@ -229,6 +235,12 @@ $background-word:rgba(0, 0, 0, .05);
     background-color: $button;
     color: $white;
 }
+
+.container {
+    width: 100%;
+}
+
+
 
 
 
