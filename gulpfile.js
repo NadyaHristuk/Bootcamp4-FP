@@ -83,6 +83,11 @@ gulp.task('fonts', () => {
     }));
 });
 
+gulp.task ('js', () => {
+  return gulp.src('./src/js/**/*.js')
+    .pipe(gulp.dest('./dist/js'))
+})
+
 // Таск слежения за изменениями файлов
 gulp.task('watch', () => {
   // Следим за изменениями в любом html файле и вызываем таск 'html' на каждом изменении
@@ -113,11 +118,11 @@ gulp.task('del:dist', () => {
 });
 
 // Таск который 1 раз собирает все статические файлы
-gulp.task('build', ['html', 'css', 'img', 'fonts']);
+gulp.task('build', ['html', 'css', 'img', 'fonts', 'js']);
 
 // Главный таск, сначала удаляет папку dist,
 // потом собирает статику, после чего поднимает сервер
 // и затем запускает слежение за файлами
 // Запускается из корня проекта командой npm start
 gulp.task('start', ['del:dist', 'build', 'server', 'watch']);
-
+>>>>>>> origin/master
