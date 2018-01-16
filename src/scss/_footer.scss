@@ -23,6 +23,7 @@
     background: no-repeat center / cover;
     margin-top: rem(15);
     padding-bottom: rem(15);
+    display: inline-block;
 }
 
 .footer__content {
@@ -31,6 +32,7 @@
 
 .footer__logo {
     background: no-repeat center / cover;
+    display: inline-block;
 }
 
 .footer-social__link, .footer-list_link {
