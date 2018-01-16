@@ -120,3 +120,4 @@ gulp.task('build', ['html', 'css', 'img', 'fonts']);
 // и затем запускает слежение за файлами
 // Запускается из корня проекта командой npm start
 gulp.task('start', ['del:dist', 'build', 'server', 'watch']);
+
