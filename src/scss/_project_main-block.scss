@@ -4,29 +4,6 @@
     padding: 1rem;
     position: relative;
 }
-.b_projects {
-    //position: absolute;
-    //top: 50%;
-    //left: 52%;
-    //transform: translate(-50%, -50%);
-    display: flex;
-    margin: auto;
-    height: 0;
-}
-.b_projects:before {
-    content: "projects";
-    text-transform: uppercase;
-    font-family: "Acrom";
-    font-size: rem(200);
-    font-weight: bold;
-    transform: rotate(90deg);
-    display: none;
-    color:  rgba(0, 0, 0, 0.1);
-    margin: auto;
-    //position: absolute;
-    //top: 25%;
-    //left: -60%;
-}
 .sub-title {
     font-size: 1.3rem;
     text-align: center;
@@ -44,7 +21,6 @@
     position: absolute;
     bottom: rem(-20);
     text-decoration: none;
-
 }
 .b_project__link:before {
     content: "\f178";
@@ -54,10 +30,20 @@
 
 
 @media (min-width: 768px) {
-    .b_projects:before {
+    .b_main:before {
+        content: "projects";
+        text-transform: uppercase;
+        font-family: "Acrom";
+        font-size: 9rem;
+        font-weight: bold;
+        -webkit-transform: rotate(90deg) translate(0, 65%);
+        transform: rotate(90deg);
         display: block;
-        font-size: 8.5rem;
-        margin-top: rem(320);
+        color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: -90px;
+        left: 50%;
+        transform-origin: left;
     }
     .b_project {
         display: flex;
@@ -74,16 +60,7 @@
     }
 }
 
-@media (min-width: 960px) {
-    .b_projects:before {
-    }
-}
-
 @media (min-width: 1024px) {
-    .b_projects:before {
-        font-size: 12.5rem;
-        margin-top: 34rem;
-    }
     .sub-title {
         text-align: left;
         font-size: rem(48);
@@ -104,13 +81,9 @@
     .text-small {
         margin: 40px 0;
     }
-
 }
 
 @media (min-width: 1440px) {
-    .b_main:before {
-        font-size: 12.5rem;
-    }
     .sub-title {
         width: 80%;
     }
