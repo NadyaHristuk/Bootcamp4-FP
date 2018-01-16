@@ -1,0 +1,47 @@
+sup {
+    font-size: rem(7);
+}
+
+.a-text-transform__cleared {
+    text-transform: none;
+    margin-bottom: rem(8);
+}
+
+.a-sidebar-block {
+    margin-bottom: rem(30);
+}
+
+.a-format-data {
+    margin-bottom: rem(19.5);
+}
+
+.title-space {
+    margin-top: rem(13.5);
+    margin-bottom: rem(10);
+}
+
+.a-bot-mrgn__none {
+    margin-bottom: rem(0);
+}
+
+.a-sidebar-wrapper  {
+    width: rem(280);
+    padding: 0 rem(10) 0 rem(8);
+    margin: 0 auto;
+
+}
+
+.tags-orange {
+    font-family: "AcromBold";
+    font-size: rem(14);
+    color: $button;
+    margin-bottom: rem(16);
+}
+
+.a-sidebar-button {
+    border: none;
+    width: 100%;
+    height: rem(50);
+    font-size: rem(12);
+    color: $white;
+}
