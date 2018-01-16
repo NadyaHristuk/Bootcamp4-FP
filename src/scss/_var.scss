@@ -1,3 +1,6 @@
+img{
+    width: 100%;
+}
 // colors
 $white: #fff;
 $title: #000;
@@ -38,6 +41,12 @@ $background-word:rgba(0, 0, 0, .05);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+img {
+    min-width: 100%;
+    display: block;
+    height: auto;
 }
 img {
     max-width: 100%;

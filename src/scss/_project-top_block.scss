@@ -1,0 +1,110 @@
+
+.b-project-top-block {
+    width: 100%;
+    background-image: url(../images/project/project.jpg)  ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 rem(16) rem(16) rem(16) ;
+}
+
+.title-main--white {
+    color: $white;
+    font-size: rem(40);
+    text-align: left;
+    line-height: rem(60);
+    margin-left: 9%;
+    margin-bottom: rem(20);
+}
+
+.b-text--first, .b-text--second {
+    text-transform: inherit;
+}
+.b-text--second {
+    margin-top: rem(20);
+    color:$white;
+}
+@media (min-width: 480px) {
+
+.b-project-top-block {
+        padding: 0 rem(25)  rem(20) rem(25) ;
+
+    }
+    .title-main--white {
+        margin-left: 7%;
+    }
+}
+@media (min-width: 768px) {
+.b-project-top-block {
+        padding: 0  rem(35) rem(64) rem(64);
+
+            }
+.title-main--white{
+        margin-left: 13%;
+        margin-bottom: 3.25rem;
+    }
+    .b-text--first {
+
+        width: 44%;
+    }
+
+    .b-text--second {
+        margin-top: 2.65rem;
+        width: 40%;
+    }
+}
+@media (min-width: 960px) {
+ .b-project-top-block {
+            padding :0  0 rem(55) rem(112) ;
+        }
+ .b-text--first {
+        width: 42%;
+    }
+ .b-text--second {
+        width: 32%;
+    }
+ .title-main--white {
+        margin-bottom: rem(20);
+        margin-left: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .b-project-top-block {
+        padding: rem(70) 0 3.4375rem 7rem;
+    }
+ .title-main--white {
+
+      font-size: rem(74);
+
+    }
+    .b-text--first {
+        width: 37%;
+        
+
+    }
+
+    @media (min-width: 1440px) {
+ .b-project-top-block {
+     padding: 12.375rem 0 16.4375rem 10rem;
+     padding-bottom: rem(200);
+        }
+
+    }
+    .title-main--white {
+
+        font-size: rem(80);
+        margin-bottom: rem(50);
+        margin-top: rem(150);
+        line-height: 1.3;
+
+    }
+    .b-text--first {
+        width: 37%;
+
+    }
+    .b-text--second {
+        width: 32%;
+    }
+
+
+}
