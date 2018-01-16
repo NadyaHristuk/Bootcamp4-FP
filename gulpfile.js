@@ -14,7 +14,7 @@ const rigger = require('gulp-rigger');
 gulp.task('html', () => {
   // Берем все файлы с расширением html в папке src
   return gulp.src('./src/*.html')
-    // с помощью ригера собираем куски html файлов, если таковые есть (//= в events_page1.html)
+    // с помощью ригера собираем куски html файлов, если таковые есть (//= в index.html)
     .pipe(rigger())
     // минифицируем html
     // .pipe(htmlmin({
@@ -82,7 +82,10 @@ gulp.task('fonts', () => {
       stream: true
     }));
 });
-
+gulp.task ('js', () => {
+  return gulp.src('./src/js/**/*.js')
+    .pipe(gulp.dest('./dist/js'))
+})
 // Таск слежения за изменениями файлов
 gulp.task('watch', () => {
   // Следим за изменениями в любом html файле и вызываем таск 'html' на каждом изменении
@@ -113,7 +116,7 @@ gulp.task('del:dist', () => {
 });
 
 // Таск который 1 раз собирает все статические файлы
-gulp.task('build', ['html', 'css', 'img', 'fonts']);
+gulp.task('build', ['html', 'css', 'img', 'fonts', 'js']);
 
 // Главный таск, сначала удаляет папку dist,
 // потом собирает статику, после чего поднимает сервер
