@@ -1,4 +1,4 @@
-.wrapper {
+.a-wrapper {
     min-width: rem(320);
     max-width: rem(1440);
     padding: 0 rem(15);
@@ -222,7 +222,7 @@
 
     .footer__list {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-basis: 48%;
     }
 }
