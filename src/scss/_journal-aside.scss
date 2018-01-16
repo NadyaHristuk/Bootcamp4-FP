@@ -1,25 +1,14 @@
 .b-sidebar {
     background-color: $white;
 }
-
-
-
 .b-list-sidedar{
     padding-left: rem(1);
     padding-right: rem(1);
-    //display: flex;
-    //flex-wrap: wrap;
-
 }
-
-
 .b-title--sidebare {
     text-align: center;
-    padding-bottom: rem(35);
+    margin-bottom: rem(35);
     font-size: rem(45);
-
-
-
 }
 .b-text-bold--ul {
     color:$button ;
@@ -27,10 +16,16 @@
     margin-left: rem(16);
     column-count: 2;
     list-style: none;
-    font-size: rem(0.8);
+    //font-size: rem(0.8);
     margin-bottom: rem(60);
-
 }
+.b-text-bold--link {
+    color:$button ;
+    text-transform: inherit;
+    font-size: rem(0.8);
+    text-decoration: none;
+}
+
 .b-list-li:before {
     content: '>';
     font-weight: bold;
@@ -49,7 +44,6 @@
     padding-left: rem(40);
     padding-bottom: rem(40);
     padding-right: rem(40);
-
 }
 .b-form-sidebare {
 
@@ -73,23 +67,31 @@
     border-bottom: 2px solid #32353f;
     line-height: rem(40);
     color: $white;
+    font-size: rem(25);
+    margin-bottom: rem(30);
 }
 .b-input::placeholder {
   @extend .text-small;
   color: $white;
-
+    text-transform: inherit;
+    font-size: rem(25);
 }
-
 .b-plagin {
     width: 100%;
     height: rem(210);
     background-color: #651067;
     margin-top: rem(60);
 }
-//@media (min-width: 320px){
-//    padding-left:rem(20) ;
-//    padding-right: rem(20);
-//}
+.b-button {
+    display: block;
+margin: auto;
+    border: none;
+    padding-left : rem(50);
+    padding-right: rem(50);
+    margin-top: rem(30);
+    font-weight: bold;
+    font-size: rem(21)
+}
 @media (min-width: 768px) {
   .b-sidebar {
       padding-left: 60px;
@@ -116,14 +118,16 @@
     }
     .b-form-sidebare {
         width: rem(262);
-        height: rem(330);
+        //height: rem(330);
         flex-basis: 40%;
     }
-    .b-plagin {
-        width: rem(262);
-
-    }
+   .b-button {
+       padding-right: rem(48);
+       padding-left: rem(48);
+       font-size: rem(12);
+   }
 }
+
 @media (min-width: 960px) {
 
 
@@ -139,12 +143,20 @@
 }
     .b-aside {
         flex-direction: column;
+        padding: 0;
     }
     .b-title--sidebare {
-        margin-bottom: rem(-10);
+        margin-bottom: rem(35);
         font-size: 22px;
         text-align: left;
-        margin-left: rem(12);
+        margin-left: 0;
     }
+    .b-text-bold--ul {
+        margin-left: 0;
+    }
+    .journal {
+        margin-top: rem(180);
+    }
+
 }
 
