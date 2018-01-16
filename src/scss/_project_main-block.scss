@@ -60,7 +60,16 @@
     }
 }
 
+@media (min-width: 960px) {
+    .b_main:before {
+        font-size: 11rem;
+    }
+}
+
 @media (min-width: 1024px) {
+    .b_main:before {
+        font-size: 13rem;
+    }
     .sub-title {
         text-align: left;
         font-size: rem(48);
@@ -84,6 +93,9 @@
 }
 
 @media (min-width: 1440px) {
+    .b_main:before {
+        font-size: 15rem;
+    }
     .sub-title {
         width: 80%;
     }
