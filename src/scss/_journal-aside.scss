@@ -72,6 +72,7 @@
     border-right: none;
     border-bottom: 2px solid #32353f;
     line-height: rem(40);
+    color: $white;
 }
 .b-input::placeholder {
   @extend .text-small;
@@ -85,10 +86,65 @@
     background-color: #651067;
     margin-top: rem(60);
 }
+//@media (min-width: 320px){
+//    padding-left:rem(20) ;
+//    padding-right: rem(20);
+//}
+@media (min-width: 768px) {
+  .b-sidebar {
+      padding-left: 60px;
+      padding-right: 60px;
+  }
+    .b-text-bold--ul {
+        font-size: rem(20);
+    }
+    .b-list-li {
+        margin-bottom: 10px;
+    }
+    .b-title--sidebare {
+        margin-bottom: 65px;
+    }
+
+    .b-aside {
+        display: flex;
+        justify-content: space-between;
+        padding-left: rem(16);
+        padding-right: rem(16);
+    }
+    .b-img-aside{
+        flex-basis: 40%;
+    }
+    .b-form-sidebare {
+        width: rem(262);
+        height: rem(330);
+        flex-basis: 40%;
+    }
+    .b-plagin {
+        width: rem(262);
+
+    }
+}
+@media (min-width: 960px) {
+
+
+}
+
 
 @media (min-width: 1024px) {
     .b-text-bold--ul {
         column-count: 1;
+    }
+.journal {
+    display: flex;
+}
+    .b-aside {
+        flex-direction: column;
+    }
+    .b-title--sidebare {
+        margin-bottom: rem(-10);
+        font-size: 22px;
+        text-align: left;
+        margin-left: rem(12);
     }
 }
 
