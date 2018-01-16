@@ -1,4 +1,7 @@
-
+.b-wrapper--posa {
+    position: absolute;
+    width: 100%;
+}
 .b-project-top-block {
     width: 100%;
     background-image: url(../images/project/project.jpg)  ;
@@ -24,10 +27,15 @@
     margin-top: rem(20);
     color:$white;
 }
+@media (min-width: 320px) {
+    .b-project-top-block {
+        padding-top: rem(70);
+    }
+}
 @media (min-width: 480px) {
 
 .b-project-top-block {
-        padding: 0 rem(25)  rem(20) rem(25) ;
+        padding: rem(70) rem(25)  rem(20) rem(25) ;
 
     }
     .title-main--white {
@@ -36,7 +44,7 @@
 }
 @media (min-width: 768px) {
 .b-project-top-block {
-        padding: 0  rem(35) rem(64) rem(64);
+        padding: rem(115)  rem(35) rem(64) rem(64);
 
             }
 .title-main--white{
@@ -55,7 +63,7 @@
 }
 @media (min-width: 960px) {
  .b-project-top-block {
-            padding :0  0 rem(55) rem(112) ;
+            padding :rem(115)  0 rem(55) rem(112) ;
         }
  .b-text--first {
         width: 42%;
@@ -79,7 +87,7 @@
     }
     .b-text--first {
         width: 37%;
-        
+
 
     }
 

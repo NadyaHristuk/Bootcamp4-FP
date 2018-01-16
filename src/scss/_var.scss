@@ -1,6 +1,3 @@
-img{
-    width: 100%;
-}
 // colors
 $white: #fff;
 $title: #000000;
@@ -44,15 +41,11 @@ $background-word:rgba(0, 0, 0, .05);
 
 }
 img {
-    min-width: 100%;
-    display: block;
-    height: auto;
-}
-img {
     max-width: 100%;
     display: block;
     height: auto;
 }
+
 .title-main {
     font-family: "AcromExtrabold" ,sans-serif;
         font-size: rem(100);
@@ -244,10 +237,5 @@ img {
 }
 
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 
