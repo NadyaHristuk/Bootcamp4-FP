@@ -1,0 +1,161 @@
+
+.b-main-journal-top {
+    max-width: rem(555);
+    padding: rem(10);
+}
+
+.b-journal-top-text {
+    font-family: "AcromExtrabold", sans-serif;
+    font-size: rem(50);
+    color: $title;
+    text-transform: uppercase;
+    line-height: rem(50);
+    display: block;
+    text-align: center;
+}
+
+.b-journal-top-text::before {
+    //max-width: rem(555);
+    font-family: 'AcromBold', sans-serif;
+    font-size: rem(12);
+    color: $dark-blue;
+    //margin: rem(10) auto;
+    content: "<h1>";
+    left: rem(5);
+    top: rem(10);
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.5rem;
+    text-transform: none;
+}
+
+.b-journal-top-text:after {
+    font-family: "AcromBold", sans-serif;
+    font-size: rem(12);
+    color: $dark-blue;
+    //margin: rem(10) auto;
+    content: "</h1>";
+    right: rem(5);
+    bottom: rem(5);
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5rem;
+    text-transform: none;
+}
+
+.b-journal-article__picture {
+    position: relative;
+
+    //display: flex;
+    //justify-content: flex-end;
+}
+.b-journal-article__picture:before {
+    font-family: "Acrom", sans-serif;
+    font-size: rem(12);
+    transform: rotate(270deg);
+    content: "#events  #coding   #goit";
+    color: $checkbox;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: -4.8rem;
+    top: 4rem;
+}
+
+.b-journal-article {
+    padding: 0 rem(20);
+    flex-basis: 40%;
+}
+
+.b-journal__section {
+    margin: rem(40) auto rem(70);
+}
+
+.b-journal__text {
+    font-family: "Acrom" ,sans-serif;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $main-text;
+    padding: rem(20) auto 0;
+    //display: block;
+    margin: rem(20) 0 0;
+}
+
+.b-journal__text-bot {
+    margin: rem(30) 0 0;
+    font-family: "Acrom" ,sans-serif;
+    font-size: rem(12);
+    color: $main-text;
+}
+
+.b-journal__text-bot-name {
+    background-color: $title;
+    margin-right: rem(20);
+    text-transform: capitalize;
+    font-family: "Acrom", sans-serif;
+    font-size: rem(12);
+    color: $white;
+}
+
+.b-main-journal-article--title-third {
+    //position
+}
+
+@media (min-width: 480px) {
+    .b-journal-top-text {
+        font-size: rem(70);
+        line-height: rem(70);
+    }
+}
+
+@media (min-width: 768px) {
+    .b-journal-top-text {
+        font-size: rem(85);
+        line-height: rem(80);
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .b-journal__media {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .b-main-journal {
+        padding: 0 rem(10);
+    }
+
+    .b-journal-top-text {
+        font-size: rem(90);
+        line-height: rem(100);
+        text-align: left;
+        margin: 0;
+        width: 60%;
+
+    }
+
+    .b-journal__media {
+        justify-content: space-between;
+    }
+
+    .b-journal-article {
+        flex-basis: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .b-journal-top-text {
+        font-size: rem(100);
+        line-height: rem(116);
+    }
+}
+@media (min-width: 1440px) {
+    .b-journal-top-text {
+        width: 40%;
+        margin-bottom: rem(90);
+    }
+}
