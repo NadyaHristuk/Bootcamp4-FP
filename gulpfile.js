@@ -1,4 +1,3 @@
-
 // В переменные получаем установленные пакеты
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
@@ -84,6 +83,11 @@ gulp.task('fonts', () => {
     }));
 });
 
+gulp.task ('js', () => {
+  return gulp.src('./src/js/**/*.js')
+    .pipe(gulp.dest('./dist/js'))
+})
+
 // Таск слежения за изменениями файлов
 gulp.task('watch', () => {
   // Следим за изменениями в любом html файле и вызываем таск 'html' на каждом изменении
@@ -114,7 +118,7 @@ gulp.task('del:dist', () => {
 });
 
 // Таск который 1 раз собирает все статические файлы
-gulp.task('build', ['html', 'css', 'img', 'fonts']);
+gulp.task('build', ['html', 'css', 'img', 'fonts', 'js']);
 
 // Главный таск, сначала удаляет папку dist,
 // потом собирает статику, после чего поднимает сервер
