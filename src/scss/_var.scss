@@ -65,11 +65,11 @@ $background-word:rgba(0, 0, 0, .05);
 }
 
 .text-bold {
-    font-family: "AcromBold" ,sans-serif;
-    font-size: rem(16);
-    text-transform: uppercase;
-    line-height: rem(24);
-    color: $title;
+        font-family: "AcromBold" ,sans-serif;
+        font-size: rem(16);
+        text-transform: uppercase;
+        line-height: rem(24);
+        color: $title;
 }
 
 .text {
@@ -229,6 +229,4 @@ $background-word:rgba(0, 0, 0, .05);
     background-color: $button;
     color: $white;
 }
-
-
 
