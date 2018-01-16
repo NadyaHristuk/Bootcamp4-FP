@@ -73,7 +73,7 @@
     font-weight: 900
 }
 
-.a-contact-fb{
+.a-contact-link {
     color: $button;
 }
 
@@ -90,16 +90,16 @@
         justify-content: space-between;
     }
     .a-portret-photo {
-        margin-right: rem(16);
+        margin-right: rem(14);
     }
 
     .a-name {
-        margin-bottom: rem(11);
+        margin-bottom: rem(10);
     }
 
     .a-role-in-company, .a-email-contact {
-        padding-top: rem(14);
-        padding-bottom: rem(18);
+        padding-top: rem(12);
+        padding-bottom: rem(16);
     }
 
     .a-email-contact {
@@ -110,7 +110,31 @@
 
 @media (min-width: 1024px) {
     .a-portret-photo {
-        margin-right: rem(22);
+        margin-right: rem(20);
+    }
+
+    .a-portret {
+        flex-basis: 30%;
+    }
+    .a-name {
+        margin-bottom: rem(14);
+    }
+
+    .a-role-in-company, .a-email-contact {
+        padding-top: rem(18);
+        padding-bottom: rem(24);
+    }
+
+    .a-email-contact {
+        padding-top: 0;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+    .a-portret-photo {
+        margin-right: rem(30);
     }
 
     .a-portret {
@@ -132,12 +156,3 @@
 
 }
 
-@media (min-width: 1440px) {
-    .a-portret-photo {
-        margin-right: rem(30);
-    }
-
-    .a-portret {
-        flex-basis: 30%;
-    }
-}
