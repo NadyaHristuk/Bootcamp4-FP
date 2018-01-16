@@ -149,13 +149,17 @@
 
 @media (min-width: 1024px) {
     .b-journal-top-text {
-        font-size: rem(100);
+        font-size: rem(84);
         line-height: rem(116);
+        width: 77%;
     }
 }
 @media (min-width: 1440px) {
     .b-journal-top-text {
-        width: 40%;
-        margin-bottom: rem(90);
+        width: 74%;
+        margin-bottom: rem(98);
+        font-size: rem(135);
+        line-height: rem(167);
+
     }
 }

@@ -67,14 +67,14 @@
     border-bottom: 2px solid #32353f;
     line-height: rem(40);
     color: $white;
-    font-size: rem(25);
+    font-size: rem(15);
     margin-bottom: rem(30);
 }
 .b-input::placeholder {
   @extend .text-small;
   color: $white;
     text-transform: inherit;
-    font-size: rem(25);
+    font-size: rem(20);
 }
 .b-plagin {
     width: 100%;
@@ -126,10 +126,20 @@ margin: auto;
        padding-left: rem(48);
        font-size: rem(12);
    }
+    .b-input::placeholder {
+        font-size: rem(16);
+    }
+    .b-journal-article__picture:before {
+        left: rem(-85);
+    }
+
 }
 
 @media (min-width: 960px) {
-
+    .b-journal-top-text {
+        font-size: rem(84);
+        width: 77%;
+    }
 
 }
 
@@ -158,5 +168,11 @@ margin: auto;
         margin-top: rem(180);
     }
 
+
 }
 
+@media (min-width: 1440px) {
+    .b-text-bold--link {
+        font-size: rem(23);
+    }
+}
