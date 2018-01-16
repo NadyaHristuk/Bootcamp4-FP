@@ -1,0 +1,94 @@
+.b-sidebar {
+    background-color: $white;
+}
+
+
+
+.b-list-sidedar{
+    padding-left: rem(1);
+    padding-right: rem(1);
+    //display: flex;
+    //flex-wrap: wrap;
+
+}
+
+
+.b-title--sidebare {
+    text-align: center;
+    padding-bottom: rem(35);
+    font-size: rem(45);
+
+
+
+}
+.b-text-bold--ul {
+    color:$button ;
+    text-transform: inherit;
+    margin-left: rem(16);
+    column-count: 2;
+    list-style: none;
+    font-size: rem(0.8);
+    margin-bottom: rem(60);
+
+}
+.b-list-li:before {
+    content: '>';
+    font-weight: bold;
+    color: $title;
+    font-size: rem(24);
+    margin-right: rem(16);
+}
+
+.b-img-sidebare {
+   width: 100%;
+    margin-bottom: rem(60);
+}
+.b-form-sidebare {
+    background-color: #181c27;
+    padding-top: rem(40);
+    padding-left: rem(40);
+    padding-bottom: rem(40);
+    padding-right: rem(40);
+
+}
+.b-form-sidebare {
+
+}
+.b-title-third {
+    color: $white;
+    font-size: rem(20);
+}
+.b-text-bold {
+    color: $dark-blue ;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    text-transform: inherit;
+}
+.b-input {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #32353f;
+    line-height: rem(40);
+}
+.b-input::placeholder {
+  @extend .text-small;
+  color: $white;
+
+}
+
+.b-plagin {
+    width: 100%;
+    height: rem(210);
+    background-color: #651067;
+    margin-top: rem(60);
+}
+
+@media (min-width: 1024px) {
+    .b-text-bold--ul {
+        column-count: 1;
+    }
+}
+
