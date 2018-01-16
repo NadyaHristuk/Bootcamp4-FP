@@ -11,8 +11,20 @@ sup {
     margin-bottom: rem(30);
 }
 
+.sidebar-flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
 .a-format-data {
     margin-bottom: rem(19.5);
+    text-align: center;
+    width: 40%;
+}
+
+.last__format-data {
+    width: 100%;
 }
 
 .title-space {
@@ -30,6 +42,8 @@ sup {
     margin: 0 auto;
 
 }
+/* DA TAGZ
+WAAAAGH!!!*/
 
 .tags-orange {
     font-family: "AcromBold";
@@ -44,4 +58,5 @@ sup {
     height: rem(50);
     font-size: rem(12);
     color: $white;
+    font-family: "AcromBold";
 }
