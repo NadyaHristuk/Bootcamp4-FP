@@ -1,20 +1,19 @@
 
 
 .a-courceTop {
-    //display: flex;
-    //flex-direction: column;
-    //align-items: center;
+   position: relative;
+
+    padding: 0 15px;
 }
-.a-chapter {
-    //display: block;
-}
+
 .a-cource__title {
     @extend .title-main;
     font-size: 50px;
     line-height: rem(50);
-    margin-bottom: rem(48);
+    //margin-bottom: rem(48);
     position: relative;
     width: rem(300);
+    margin: 0 auto rem(48);
 }
 .a-cource__title:before {
     content: "<h>";
@@ -23,7 +22,7 @@
     text-transform: none;
     color: rgba(27, 67, 113, 255);
     position: absolute;
-    top: rem(25);
+    top: rem(20);
     left: rem(0);
 }
 .a-cource__title:after {
@@ -33,7 +32,7 @@
     text-transform: none;
     color: rgba(27, 67, 113, 255);
     position: absolute;
-    bottom: rem(-57);
+    bottom: rem(-20);
     left: 74%;
 }
 
@@ -48,55 +47,69 @@
 .a-chapterPic{
     display: block;
     width: 100%;
-
-    background-color: #ff7f50;
-
-
+    //background-color: #ff7f50;
+}
+.a-chapterPic:after {
+    display: none;
+    content: "GOIT";
+    @extend.title-main;
+    transform: rotate(90deg);
+    //color: #17ecff;
+    color:$background-word;
+    position: absolute;
+    font-size: 260px;
+    top: rem(240);
+    left: 28%;
+    z-index: -1;
 }
 
 @media (min-width: 768px) {
     .a-courceTop {
-        flex-direction:row;
-        //align-self: center;
+        display: flex;
+        //flex-direction:row;
+        justify-content: center;
     }
     .a-chapter {
-        //width: 50%;
-        width: rem(445);
+        width: 43%;
+        //width: rem(445);
     }
-    .a-top__txt {
-        width: rem(300);
+    .a-chapterPic {
+        width: 43%;
     }
-
+    .a-chapterPic:after{
+        display: block;
+    }
 
 }
 @media (min-width: 1024px) {
 
     .a-cource__title {
-        font-size: rem(133);
-        line-height: rem(130);
+        font-size: rem(100);
+        line-height: rem(100);
+        width: rem(460);
     }
 
+    .a-cource__title:after {
 
-    
-    .a-top__txt {
-        width: rem(415);
+        bottom: rem(-45);
+        left: 90%;
     }
-    .a-chapterPic {
-        //width: rem(528);
-        width: 615px;
+    .a-chapterPic:after{
+        left: 46%;
     }
-    .a-courceTop {
-        //padding-left: rem(390);
-    }
+
 
 }
 
 @media (min-width: 1440px) {
-    .a-chapter {
-        width: rem(615);
+    .a-courceTop {
+        //justify-content: flex-end;
     }
-    .a-cource__title {
-        width: rem(615)
+    .a-chapter {
+        width: 31%;
+    }
+    .a-chapterPic:after{
+        left: 63%;
     }
 
 }
