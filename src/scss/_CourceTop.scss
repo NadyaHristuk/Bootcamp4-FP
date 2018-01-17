@@ -47,7 +47,6 @@
 .a-chapterPic{
     display: block;
     width: 100%;
-    //background-color: #ff7f50;
 }
 .a-chapterPic:after {
     display: none;
@@ -66,12 +65,10 @@
 @media (min-width: 768px) {
     .a-courceTop {
         display: flex;
-        //flex-direction:row;
         justify-content: center;
     }
     .a-chapter {
         width: 43%;
-        //width: rem(445);
     }
     .a-chapterPic {
         width: 43%;
@@ -102,9 +99,7 @@
 }
 
 @media (min-width: 1440px) {
-    .a-courceTop {
-        //justify-content: flex-end;
-    }
+
     .a-chapter {
         width: 31%;
     }
