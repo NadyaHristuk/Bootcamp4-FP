@@ -1,12 +1,18 @@
+.wrapper {
+    min-width: rem(320);
+    max-width: rem(1440);
+    padding: 0 rem(15);
+    margin: 0 auto;
+}
 
-.a-section {
+.a-events {
     background-color: #f7f7f7;
     padding: rem(20);
     margin: auto;
 
 }
 
-.a-section__title {
+.a-events__title {
     font-family: "AcromBold", sans-serif;
     font-size: rem(16);
     color: $title;
@@ -22,11 +28,11 @@
     margin: auto;
 }
 
-.a-section__pic {
+.a-events__pic {
     margin: rem(20) 0;
 }
 
-.a-section__text {
+.a-events__text {
     font-family: "AcromBold", sans-serif;
     font-size: rem(14);
     color: $title;
