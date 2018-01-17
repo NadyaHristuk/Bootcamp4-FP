@@ -1,0 +1,158 @@
+.a-wrapper {
+    min-width: rem(320);
+    max-width: rem(1440);
+    padding: 0 rem(15);
+    margin: 0 auto;
+}
+
+.a-contact__section {
+    text-align: center;
+}
+
+.a-contact {
+    padding-top: rem(130);
+    padding-bottom: rem(150);
+}
+
+.a-contact__info-span {
+    display: block;
+}
+
+.a-contact__title {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(40);
+    text-transform: uppercase;
+    line-height: rem(40);
+    color: $title;
+    margin-bottom: rem(20);
+}
+
+.a-contact__text {
+    font-family: "Acrom" ,sans-serif;
+    font-size: rem(14);
+    line-height: rem(21);
+    color: $main-text;
+    margin-bottom: rem(20);
+}
+
+.a-contact__title3 {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(12);
+    text-transform: uppercase;
+    line-height: rem(60);
+    color: $title;
+}
+
+.a-contact__span {
+    color: $button;
+}
+
+.a-contact__span2 {
+    color: $title;
+    margin: 0 rem(20);
+}
+
+
+.a-contact__span3 {
+    opacity: 0.3;
+    color: $main-text;
+}
+
+.a-contact__title2 {
+    margin-bottom: rem(20);
+}
+
+.a-contact__section2 {
+    width: rem(290);
+    height: rem(300);
+    border: 1px solid red;
+}
+
+.a-contact__section {
+    margin-bottom: rem(20);
+}
+
+@media (min-width: 480px) {
+
+    .a-contact__section2 {
+        width: rem(450);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .a-contact__section2 {
+        width: rem(748);
+    }
+}
+
+@media (min-width: 960px) {
+
+    .a-contact__section2 {
+        width: rem(910);
+    }
+
+    .a-contact__info {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .a-contact__box {
+        text-align: left;
+    }
+
+    .a-contact__text {
+        text-align: left;
+    }
+
+    .a-contact__title {
+        margin-bottom: rem(100);
+    }
+
+    .a-contact__text {
+        margin: 0;
+    }
+
+    .a-contact__title3 {
+        margin-top: rem(20);
+    }
+}
+
+@media (min-width: 960px) {
+
+    .a-contact__section2 {
+        width: rem(960);
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .a-contact__section2 {
+        width: rem(1360);
+    }
+    .a-contact__title {
+        text-align: left;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .a-contact__info2 {
+        display: flex;
+    }
+
+    .a-contact__info {
+        flex-basis: 53%;
+        width: rem(625);
+    }
+
+    .a-contact__title-span {
+        display: block;
+    }
+
+    .a-contact__main {
+        display: flex;
+    }
+    .title-span-bottom {
+        margin-bottom: rem(10);
+    }
+}
