@@ -1,252 +1,3 @@
-////
-////.c-container {
-////    margin: auto;
-////    display: flex;
-////    min-width: rem(320);
-////    max-width: rem(1440);
-////}
-////
-////.c-block__img {
-////    padding-top: rem(250);
-////}
-////.c-container__block-col {
-////    margin: 0 0 rem(95);
-////    display: flex;
-////}
-////
-////.c-block-col__graduate {
-////    margin-right: rem(33);
-////}
-////
-////.c-block__text--graduate{
-////    width: rem(140);
-////}
-////.c-block-col__graduate::before {
-////    display: block;
-////    content: '';
-////    width: rem(12);
-////    height: rem(12);
-////    background-color: $title;
-////    margin-bottom: rem(38);
-////}
-////
-////.c-block-col__student {
-////    margin-right: rem(40);
-////}
-////.c-block-col__student::before {
-////    display: block;
-////    content: '';
-////    width: rem(12);
-////    height: rem(12);
-////    background-color: $title;
-////    margin-bottom: rem(38);
-////}
-////
-////.c-block-col__level::before {
-////    display: block;
-////    content: '';
-////    width: rem(12);
-////    height: rem(12);
-////    background-color: $title;
-////    margin-bottom: rem(38);
-////}
-////
-////.c-block__text--level {
-////    width: rem(180);
-////}
-////
-////.c-small__percent {
-////    font-size: rem(25);
-////}
-////
-////.c-text__bold {
-////    font-family: "AcromBold" ,sans-serif;
-////    font-size: rem(16);
-////}
-////.c-number__size {
-////    font-family: "AcromExtrabold" ,sans-serif;
-////    font-size: rem(36);
-////    text-transform: uppercase;
-////    color: $title;
-////    margin-bottom: rem(26);
-////}
-////
-////.c-work {
-////    margin: rem(250) 0 0 rem(126);
-////    width: rem(380);
-////}
-////.c-work::before {
-////    display: block;
-////    content: '';
-////    width: rem(7);
-////    height: rem(50);
-////    background-color: $title;
-////    margin-bottom: rem(76);
-////}
-////
-////.c-work__dash--text-teacher {
-////    font-size: rem(16);
-////    color: $white;
-////    width: rem(150);
-////    margin-bottom: rem(19);
-////    line-height: rem(27);
-////}
-////
-////.c-work__dash--text-it {
-////    font-family: "Acrom" ,sans-serif;
-////    font-size: rem(14);
-////    margin-bottom: rem(29);
-////}
-////
-////.background-black {
-////    background-color: $title;
-////    color: $white;
-////    font-family: "AcromBold" ,sans-serif;
-////}
-////
-////.c-work__dash--text-student {
-////    margin-bottom: rem(15);
-////}
-////
-////.c-work__dash--text-project {
-////    font-family: "Acrom" ,sans-serif;
-////    font-size: rem(14);
-////    margin-bottom: rem(29);
-////
-////}
-////
-////.c-work__dash--text-we {
-////    margin-bottom: rem(17);
-////}
-////
-////.c-work__dash--text-out {
-////    font-family: "Acrom" ,sans-serif;
-////    font-size: rem(14);
-////}
-//
-//
-//    .c-container {
-//        min-width: rem(320);
-//        max-width: rem(1440);
-//        padding: rem(10);
-//        text-align: center;
-//    }
-//
-//    .c-gallery__img {
-//        width: rem(300);
-//        }
-//
-//    .c-work {
-//        margin: 0;
-//        width: rem(300);
-//    }
-//
-//    .c-work::before {
-//        display: none;
-//    }
-//
-//    .c-work__dash {
-//        font-size: rem(38);
-//    }
-//
-//    .c-block-col__graduate::before,.c-block-col__level::before,.c-block-col__student::before {
-//        display: none;
-//    }
-//
-//    .c-block__text--graduate,.c-block__text--level,.c-work__dash--text-teacher {
-//        width: 100%;
-//    }
-//
-//
-//    .c-block-col__graduate,.c-block-col__student,.c-block-col__level {
-//        width: 100%;
-//        margin: auto;
-//
-//    }
-//
-//@media  (min-width: rem(480)) and (max-width: rem(768)) {
-//    .c-container {
-//        width: rem(480);
-//        flex-direction: column;
-//        margin: auto;
-//    }
-//
-//    .c-gallery__img {
-//        width: rem(480);
-//    }
-//
-//    .c-block__img {
-//        padding-top: rem(60);
-//
-//    }
-//
-//    .c-work {
-//        margin: 0;
-//    }
-//
-//    .c-container__block-col {
-//        margin: 0 0 rem(60) rem(30);
-//    }
-//
-//    .c-block-col__student {
-//        margin-right: rem(20);
-//    }
-//
-//    .c-block-col__graduate {
-//        margin: 0;
-//    }
-//
-//    .c-work::before {
-//        margin: rem(38) 0 rem(38);
-//    }
-//
-//    .c-work__dash {
-//        margin-bottom: rem(38);
-//    }
-//
-//}
-//
-//@media  (min-width: rem(768)) and (max-width: rem(960)) {
-//
-//    .c-container {
-//        width: rem(748);
-//        padding: 0 rem(10);
-//    }
-//
-//    .c-gallery__img {
-//        width: rem(500);
-//    }
-//
-//    .c-container__block-col {
-//        margin: 0 0 rem(50) rem(10);
-//    }
-//
-//    .c-work {
-//        margin: 0 0 0 rem(20);
-//        padding-top: rem(50);
-//    }
-//
-//    .c-work__dash {
-//        font-size: rem(28);
-//        line-height: rem(40);
-//        margin-bottom: rem(20);
-//    }
-//
-//    .c-block-col__graduate {
-//        margin-right: rem(20);
-//    }
-//
-//    .c-work::before {
-//        margin-bottom: rem(38);
-//    }
-//
-//    .c-block__img {
-//        padding-top: rem(50);
-//    }
-//
-//}
-
-
 .c-container {
     min-width: rem(320);
     max-width: rem(1440);
@@ -334,17 +85,8 @@ img {
 
     .c-career__info {
         display: flex;
-        margin-bottom: rem(10);
-    }
-
-    .c-career__info-item::before {
-        display: block;
-        content: '';
-        width: rem(12);
-        height: rem(12);
-        background-color: $title;
-        margin-bottom: rem(5);
-
+        margin: rem(10) 0 rem(10);
+        justify-content: space-between;
     }
 
     .c-career__info-item {
@@ -363,11 +105,181 @@ img {
     }
 
     .c-career__text-info {
-        font-size: rem(14);
+        font-size: rem(11);
     }
 
     .c-career__text {
         font-size: rem(10);
     }
 
+    .c-career__text-slim {
+        font-size: rem(10);
+    }
 }
+
+@media (min-width: 960px) {
+    .c-career__title {
+        font-family: "AcromExtrabold" ,sans-serif;
+        font-size: rem(48);
+        text-transform: uppercase;
+        line-height: rem(50);
+        color: $title;
+        margin: rem(20) 0 rem(50);
+    }
+
+    .c-career__text--white {
+        font-size: rem(16);
+    }
+
+    .c-career__text-slim {
+        font-size: rem(14);
+    }
+
+    .c-work {
+        line-height: rem(40);
+    }
+
+    .c-career__work::before {
+        display: block;
+        content: "ABOUT";
+        font-size: rem(120);
+        position: absolute;
+        color: rgba(0,0,0,0.1);
+        font-family: "AcromExtrabold" ,sans-serif;
+        transform: rotate(90deg);
+        top: rem(180);
+        left: 30%;
+        line-height: rem(130);
+    }
+
+
+    .c-career__work {
+        position: relative;
+        flex-basis: 45%;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+
+    .c-career__info-item::before {
+        display: block;
+        content: '';
+        width: rem(12);
+        height: rem(12);
+        background-color: $title;
+        margin-bottom: rem(5);
+
+    }
+
+    .c-career__title::before {
+        display: block;
+        content: '';
+        width: rem(7);
+        height: rem(40);
+        background-color: $title;
+        margin: rem(10) 0 rem(40);
+    }
+
+    .c-career__title {
+        margin-top: 0;
+    }
+
+    .c-career__work {
+        flex-basis: 45%;
+    }
+
+    .c-career__work::before {
+        line-height: rem(130);
+        top: rem(200);
+        font-size: rem(140);
+    }
+
+    .c-career__work::before {
+        left: 23%;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+
+    .c-career__number {
+        font-size: rem(36);
+        margin: rem(38) 0 rem(26);
+    }
+    .c-career__text-info {
+        font-family: "AcromBold", sans-serif;
+        font-size: rem(16);
+        line-height: rem(19);
+
+    }
+
+    .c-career__text-info--swap {
+        width: rem(160);
+    }
+
+    .c-career__info {
+        margin: rem(250) 0 rem(95);
+
+    }
+
+    .c-career__title {
+        margin-top: rem(250);
+        font-size: rem(48);
+        line-height: rem(60);
+        width: rem(350);
+    }
+
+    .c-career__title::before {
+        height: rem(50);
+        margin: 0  0 rem(76) 0;
+    }
+
+    .c-career__counter {
+        flex-basis: 45%;
+
+    }
+
+    .c-career__work::before {
+        line-height: rem(130);
+        top: rem(580);
+        font-size: rem(220  );
+    }
+
+    .c-gallery__img {
+        margin-bottom: rem(109);
+    }
+
+    .c-career__text--white {
+        font-size: rem(16);
+    }
+
+    .c-career__text-slim {
+        font-size: rem(14);
+    }
+
+    .c-career__title {
+        margin-bottom: rem(89);
+    }
+
+    .c-career__text--double {
+        width: rem(140);
+        margin-bottom: rem(19)
+    }
+
+    .c-work {
+        width: rem(386);
+    }
+
+    .c-career__text-slim {
+        margin-bottom: rem(20);
+        font-size: rem(14);
+    }
+
+    //.c-career__work::before {
+    //    left: 0;
+    //}
+}
+
