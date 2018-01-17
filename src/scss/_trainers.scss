@@ -3,7 +3,6 @@
     padding: 0 rem(10);
 }
 
-
 .c-trainers-gallery {
 
     &__item {
@@ -16,10 +15,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    &__img {
-        height: 100%;
     }
 
     &__number {
@@ -141,6 +136,17 @@
         justify-content: space-between;
         padding-top: rem(50);
 
+        &__text {
+            h4 span {
+                display: block;
+                line-height: rem(20);
+            }
+
+            h4 span:last-child {
+                line-height: rem(30);
+            }
+        }
+
         .c-trainers-gallery__block:nth-child(n) {
             display: flex;
             align-items: flex-end;
@@ -159,6 +165,10 @@
                 width: 60%;
                 height: rem(340);
                 margin-right: 7%;
+            }
+
+            .c-trainers-gallery__img {
+                height: rem(340);
             }
 
             .c-trainers-gallery__text {
