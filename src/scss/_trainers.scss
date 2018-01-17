@@ -92,9 +92,8 @@
 }
 
 @media (min-width: 768px) {
-        .c-trainers-gallery {
+    .c-trainers-gallery {
         display: flex;
-
 
         .c-trainers-gallery__block:nth-child(n+2) {
             display: block;
