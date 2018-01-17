@@ -39,7 +39,7 @@ body {
     margin-bottom: rem(10);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .a-format-data {
         text-align: left;
     }
@@ -57,6 +57,13 @@ body {
         margin-bottom: rem(112);
     }
 
+    .a-sidebar-wrapper  {
+        width: rem(280);
+        padding: 0 rem(15);
+        margin: 0 auto;
+
+    }
+
 }
 
 
@@ -65,8 +72,7 @@ body {
 }
 
 .a-sidebar-wrapper  {
-    width: rem(280);
-    padding: 0 rem(10) 0 rem(8);
+    padding: 0 rem(15);
     margin: 0 auto;
 
 }
