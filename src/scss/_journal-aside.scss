@@ -36,6 +36,9 @@
 
 .b-img-sidebare {
    width: 100%;
+
+}
+.b-img-aside {
     margin-bottom: rem(60);
 }
 .b-form-sidebare {
@@ -45,17 +48,15 @@
     padding-bottom: rem(40);
     padding-right: rem(40);
 }
-.b-form-sidebare {
 
-}
-.b-title-third {
+.b-title-third--form {
     color: $white;
     font-size: rem(20);
 }
-.b-text-bold {
+.b-text-bold--form {
     color: $dark-blue ;
-    padding-top: rem(20);
-    padding-bottom: rem(20);
+    margin-top: rem(20);
+    margin-bottom: rem(20);
     text-transform: inherit;
 }
 .b-input {
@@ -76,13 +77,8 @@
     text-transform: inherit;
     font-size: rem(20);
 }
-.b-plagin {
-    width: 100%;
-    height: rem(210);
-    background-color: #651067;
-    margin-top: rem(60);
-}
-.b-button {
+
+.b-button--form {
     display: block;
 margin: auto;
     border: none;
@@ -112,25 +108,35 @@ margin: auto;
         justify-content: space-between;
         padding-left: rem(16);
         padding-right: rem(16);
+        margin-bottom: rem(65);
     }
     .b-img-aside{
         flex-basis: 40%;
+        margin-bottom: 0;
     }
     .b-form-sidebare {
         width: rem(262);
         //height: rem(330);
         flex-basis: 40%;
+        padding-top: rem(24);
+        padding-left: rem(24);
+        padding-bottom: rem(24);
+        padding-right: rem(8);
     }
-   .b-button {
+   .b-button--form {
        padding-right: rem(48);
        padding-left: rem(48);
        font-size: rem(12);
+       margin-top: 0;
    }
     .b-input::placeholder {
         font-size: rem(16);
     }
     .b-journal-article__picture:before {
         left: rem(-85);
+    }
+    .b-title-third--form {
+        font-size: rem(14);
     }
 
 }
@@ -140,7 +146,15 @@ margin: auto;
         font-size: rem(84);
         width: 77%;
     }
-
+    .b-button--form {
+        margin-top: rem(20);
+    }
+    .b-form-sidebare {
+        padding-top: 3.5rem;
+        padding-left: 3.5rem;
+        padding-bottom: 3.5rem;
+        padding-right: 3.5rem;
+    }
 }
 
 
@@ -167,7 +181,19 @@ margin: auto;
     .journal {
         margin-top: rem(180);
     }
-
+    .b-form-sidebare {
+        margin-top: rem(60);
+        padding-top: rem(40);
+        padding-left: rem(40);
+        padding-bottom: rem(40);
+        padding-right: rem(40);
+    }
+    .b-title-third--form {
+        font-size: rem(17);
+    }
+    .b-button--form {
+        margin-top: 0;
+    }
 
 }
 
