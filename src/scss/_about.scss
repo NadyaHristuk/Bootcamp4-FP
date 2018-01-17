@@ -56,7 +56,6 @@
     font-size: rem(14);
     line-height: rem(21);
     color: $main-text;
-    //margin-bottom: rem(10);
 }
 
 .c-career__text-info {
@@ -64,6 +63,10 @@
     font-size: rem(16);
     line-height: rem(24);
     color: $title;
+}
+
+.c-career__text-slim {
+    margin: rem(5) 0;
 }
 
 img {
@@ -278,8 +281,8 @@ img {
         font-size: rem(14);
     }
 
-    //.c-career__work::before {
-    //    left: 0;
-    //}
+    .c-career__work::before {
+        left: 0;
+    }
 }
 
