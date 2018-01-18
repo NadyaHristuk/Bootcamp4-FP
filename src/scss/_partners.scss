@@ -1,14 +1,13 @@
 .c-block-partners{
     min-width: rem(320);
     max-width: rem(1440);
-}
-.c-wrapper-partners{
-    width: 90%;
-    margin: 0 auto;
+    padding: 0 rem(15);
 }
 
-.c-wrapper-partners h1{
+
+.c-block-partners h1{
     font-size: rem(40);
+    width: rem(300);
 }
 //.c-wrapper-partners .sub-title:after{
 //    content: "";
@@ -22,7 +21,7 @@
 //}
 
 
-.c-partner-sprite {
+.c-partner__sprite {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -30,12 +29,12 @@
     justify-content: space-around;
     padding-bottom: rem(20);
 }
-.c-partner-sprite li{
+.c-partner__sprite li{
    list-style-type: none;
     flex-basis: 30%;
     padding: rem(5);
 }
-.c-partner-sprite a{
+.c-partner__sprite a{
     display: block;
 
 }
