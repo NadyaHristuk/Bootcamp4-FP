@@ -214,6 +214,19 @@
 
     .b-all_result{
         display: flex;
+        margin-top: rem(150);
+    }
+
+    .b-all__facts{
+        flex-basis: 70%;
+    }
+
+    .b-main__text-black{
+        margin-top: 0;
+    }
+
+    .b-what-do__text{
+        margin: 0 rem(10) 0 rem(10);
     }
 
 }
