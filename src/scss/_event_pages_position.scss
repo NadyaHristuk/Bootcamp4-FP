@@ -1,0 +1,24 @@
+@media (min-width: 960px) {
+    .event-page-blocks {
+        margin: 0 auto;
+        padding: rem(15);
+        min-width: 20rem;
+        max-width: 90rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+@media (min-width: 768px) {
+    .event-page-blocks {
+        margin: 0 auto;
+        padding: rem(15)
+    }
+}
+@media (min-width: 320px) {
+    .event-page-blocks {
+        margin: 0 auto;
+        padding: rem(15);
+    }
+}
