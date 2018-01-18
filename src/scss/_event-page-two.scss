@@ -48,11 +48,25 @@ h2 {
 }
 @media (min-width: 768px) {
     .a-mid-left-cont {
-        display: flex;
-
 
     }
+    .a-main-caption {
+        text-align: center;
+    }
 
+}
+@media (min-width: 1024px) {
+    .a-background-pic {
+        position: relative;
+        left: -15px;
+        top: -35px;
+        z-index: -1;
+    }
+    .a-main-caption {
+        margin-bottom: 0;
+        width: rem(500);
+        margin: 0 auto;
+    }
 }
 
 
