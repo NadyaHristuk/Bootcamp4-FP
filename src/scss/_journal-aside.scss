@@ -37,6 +37,10 @@
 .b-img-sidebare {
    width: 100%;
 
+
+}
+.b-aside {
+    margin-bottom: rem(60);
 }
 .b-img-aside {
     margin-bottom: rem(60);
@@ -121,7 +125,7 @@ margin: auto;
         padding-top: rem(24);
         padding-left: rem(24);
         padding-bottom: rem(24);
-        padding-right: rem(8);
+        padding-right: rem(24);
     }
    .b-button--form {
        padding-right: rem(48);
