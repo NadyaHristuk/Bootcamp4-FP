@@ -1,0 +1,123 @@
+.a-events-wrapper {
+    min-width: rem(320);
+    padding: rem(15);
+}
+
+.a-text-center {
+    text-align: center;
+}
+
+.a-small-box-wrapper {
+    display: block;
+    margin-bottom: rem(57);
+}
+
+.a-text-transform__cleared {
+    text-transform: none;
+    text-align: center;
+}
+
+.a-text-mb-bot {
+    margin-bottom: rem(36);
+}
+
+//Contack me form
+
+.a-form-sidebar {
+    background-color: #181c27 ;
+    padding-top: rem(40);
+    padding-left: rem(40);
+    padding-bottom: rem(40);
+    padding-right: rem(40);
+
+}
+
+.a-title-third--form {
+    color: $white;
+    font-size: rem(16);
+    font-weight: bold;
+    font-family: "Acrom" ,sans-serif;
+    text-transform: uppercase;
+    line-height: rem(24);
+    text-align: center;
+}
+
+.a-text-bold--form {
+    color: $dark-blue ;
+    margin-top: rem(29);
+    margin-bottom: rem(20);
+    text-transform: inherit;
+    font-size: rem(12);
+}
+
+
+.a-input {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #32353f ;
+    line-height: rem(40);
+    color: $white;
+    font-size: rem(15);
+    margin-bottom: rem(30);
+}
+
+
+
+.a-input::placeholder {
+    @extend .text-small;
+    color: $white;
+    text-transform: inherit;
+    font-size: rem(14);
+}
+
+.a-content-part {
+    display: block;
+}
+
+.a-where-find-element {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.a-format-data {
+    display: block;
+    margin-bottom: rem(15);
+    flex-basis: 60%;
+}
+
+
+.a-button {
+    display: block;
+    margin: auto;
+    border: none;
+    width: 100%;
+    height: rem(40);
+    font-weight: 900;
+    font-size: rem(12);
+    text-align: center;
+    padding: 0;
+}
+
+.a-btn-height {
+    height: rem(50);
+}
+
+
+
+.a-img-options {
+    display: block;
+    width: 100%;
+    margin-bottom: rem(25);
+
+}
+
+@media (min-width: 480px) {
+    .a-format-data {
+        flex-basis: auto;
+    }
+
+}
