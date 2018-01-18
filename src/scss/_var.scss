@@ -244,6 +244,7 @@ $background-word:rgba(0, 0, 0, .05);
     min-width: rem(320);
     padding: rem(30) rem(10);
     margin: 0 auto;
+    position: relative;
 }
 
 @media (min-width: 480px) {
