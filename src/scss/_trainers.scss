@@ -117,6 +117,20 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: rem(20);
+        position: relative;
+
+        &:after {
+            content: 'trainer';
+            font-family: 'AcromExtrabold', sans-serif;
+            font-size: rem(164);
+            color: $background-word;
+            text-transform: uppercase;
+            z-index: -1;
+            position: absolute;
+            bottom: rem(254);
+            right: rem(-130);
+            transform: rotate(90deg);
+        }
 
         &__text {
             h4 span {
@@ -175,7 +189,7 @@
             }
 
             .c-trainers-gallery__number {
-                left: 90%;
+                left: 87%;
             }
         }
 
@@ -196,7 +210,7 @@
             }
 
             .c-trainers-gallery__number {
-                left: 90%;
+                left: 83%;
             }
         }
 
