@@ -1,0 +1,130 @@
+.c-companies {
+    display: none;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .c-companies {
+        width: 100%;
+        background-color: #181c27;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+
+        &__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            display: flex;
+        }
+
+        &__title {
+            font-family: "AcromExtrabold" , sans-serif;
+            font-size: rem(60);
+            text-transform: uppercase;
+            color: $white;
+            line-height: rem(70);
+            width: rem(120);
+            margin-right: rem(10);
+
+            .c-medium {
+                font-family: "AcromBold" , sans-serif;
+            }
+        }
+
+        &__subtitle {
+            font-family: "AcromExtrabold" , sans-serif;
+            font-size: rem(9);
+            letter-spacing: rem(1);
+            line-height: rem(16);
+            text-transform: uppercase;
+            color: $white;
+            width: rem(90);
+
+            .c-color-1 {
+                color: #3268a7;
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .c-companies {
+
+        &__title {
+            font-family: "AcromExtrabold", sans-serif;
+            font-size: rem(70);
+            text-transform: uppercase;
+            color: $white;
+            line-height: rem(80);
+            width: rem(140);
+            margin-right: rem(10);
+        }
+
+        &__subtitle {
+            font-family: "AcromExtrabold", sans-serif;
+            font-size: rem(11);
+            letter-spacing: rem(2);
+            line-height: rem(18);
+            text-transform: uppercase;
+            color: $white;
+            width: rem(90);
+        }
+    }
+}
+
+@media (min-width: 1170px) {
+    .c-companies {
+        width: 100%;
+        background-color: #181c27;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        /*background-image: url(../images/companies/main-bg-1170.jpg);
+        background-repeat: no-repeat;
+        background-position: center;*/
+
+        &__image {
+            width: 90%;
+        }
+
+        &__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-35%, -50%);
+            display: flex;
+        }
+
+        &__title {
+            font-family: "AcromExtrabold" , sans-serif;
+            font-size: rem(130);
+            text-transform: uppercase;
+            color: $white;
+            line-height: rem(150);
+            width: rem(270);
+            margin-right: rem(10);
+
+            .c-medium {
+                //font-family: "AcromMedium" , sans-serif;
+            }
+        }
+
+        &__subtitle {
+            font-family: "AcromExtrabold" , sans-serif;
+            font-size: rem(11);
+            letter-spacing: rem(2);
+            line-height: rem(20);
+            text-transform: uppercase;
+            color: $white;
+            width: rem(125);
+
+            .c-color-1 {
+                color: #3268a7;
+            }
+        }
+    }
+}
