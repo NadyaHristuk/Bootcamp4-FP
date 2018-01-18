@@ -1,3 +1,8 @@
+sup {
+    font-size: rem(7);
+}
+
+
 .a-events-wrapper {
     min-width: rem(320);
     padding: rem(15);
@@ -61,7 +66,9 @@
     line-height: rem(40);
     color: $white;
     font-size: rem(15);
-    margin-bottom: rem(30);
+    margin-bottom: rem(15);
+
+
 }
 
 
@@ -72,15 +79,21 @@
     text-transform: inherit;
     font-size: rem(14);
 }
+//contact me form end
+
 
 .a-content-part {
     display: block;
+    margin-bottom: rem(30);
 }
 
-.a-where-find-element {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.a-content-part h1 {
+    width: rem(290);
+    margin: 0 auto;
+}
+
+.a-where-find__element {
+
 }
 
 .a-format-data {
@@ -94,22 +107,21 @@
     display: block;
     margin: auto;
     border: none;
-    width: 100%;
-    height: rem(40);
     font-weight: 900;
     font-size: rem(12);
     text-align: center;
-    padding: 0;
+    padding: rem(16.5) rem(54)
 }
 
-.a-btn-height {
-    height: rem(50);
+.a-btn-im-in {
+    padding: rem(16.5) rem(22);
 }
 
-
+.a-img-display {
+    display: none;
+}
 
 .a-img-options {
-    display: block;
     width: 100%;
     margin-bottom: rem(25);
 
@@ -118,6 +130,22 @@
 @media (min-width: 480px) {
     .a-format-data {
         flex-basis: auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .a-small-box-wrapper{
+        display: flex;
+    }
+
+    .a-img-display {
+        display: block;
+    }
+
+    .a-format-data {
+        flex-basis: 45%;
     }
 
 }
