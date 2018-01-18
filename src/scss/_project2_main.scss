@@ -186,7 +186,7 @@
 
 @media (min-width:1024px){
     .b-team{
-        display: flex;
+        //display: flex;
     }
 
     .b-team__text{
@@ -202,7 +202,7 @@
 
     .bold{
         font-weight: bold;
-        font-size: rem(33);
+        font-size: rem(31);
         margin-top: rem(20);
     }
 
@@ -229,4 +229,20 @@
         margin: 0 rem(10) 0 rem(10);
     }
 
+    .b-main__img{
+        margin-bottom: rem(5);
+    }
+
+}
+
+/*medeia for 1024px and*/
+
+
+/*medeia for 1440px */
+
+@media (min-width:1440px){
+    .bold{
+        width: 29%;
+        font-size: rem(35);
+    }
 }
