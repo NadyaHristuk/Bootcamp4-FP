@@ -7,16 +7,16 @@
     font-size: rem(40);
     text-align: center;
 }
-//.c-wrapper-partners .sub-title:after{
-//    content: "";
-//    display: block;
-//    position: relative;
-//    width: rem(7);
-//    height: rem(50);
-//    background-color: #000000;
-//    left: rem(250);
-//    top: rem(-15);
-//}
+.c-wrapper-partner .sub-title:after{
+    content: "";
+    display: none;
+    position: relative;
+    width: rem(7);
+    height: rem(50);
+    background-color: #000000;
+    left: rem(250);
+    top: rem(-15);
+}
 .c-partner-text{
     text-transform: none;
     color: #fff;
@@ -222,17 +222,70 @@
 @media (min-width: 960px) {
     .c-block-partners h1:first-child{
         width: 30%;
-        margin: 0 auto rem(15);
+        margin: 0 0 rem(15) 0;
     }
     .c-wrapper-partner{
         display: flex;
+        justify-content: space-between;
+    }
+    .c-partner{
+        width: 60%;
     }
     .c-partner-text{
+
         text-align: left;
+        padding-top: rem(15);
     }
     .c-partner__sprite li{
         flex-basis: 10%;
+    }
+    .c-wrapper-awards{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .c-tender{
+        width: 30%;
+    }
+    .c-awards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+    .c-awards p:first-child{
+        flex-basis: 100%;
+        text-align: start;
 
+
+    }
+    .c-awards .text:first-child{
+
+        margin-top: 0;
+    }
+    .c-wrapper-winner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .c-award{
+        flex-basis: 40%;
+    }
+    .c-educ{
+        flex-basis: 40%;
+    }
+    .c-winner-picture{
+        max-width: none;
+    }
+
+}
+//Media 1440
+@media (min-width: 1440px) {
+    .c-block-partners{
+        padding-top: rem(250);
+    }
+    .c-block-partners h1:first-child{
+        width: 25%;
+        font-size: rem(48);
+        //margin: ;
     }
 
 
