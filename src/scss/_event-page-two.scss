@@ -1,0 +1,59 @@
+$block-marg: 3.125rem;
+$inblock-marg: 1.375rem;
+
+/*.container {
+    min-width: 30rem;
+    max-width: 64rem;
+    margin: 0 auto;
+    height: 50rem;
+    padding: 2rem;
+}
+*/
+.a-container {
+    margin: 0 auto;
+    padding: 0 rem(15);
+    min-width: 20rem;
+    max-width: 90rem;
+}
+.a-main-caption {
+    margin-bottom: 1rem;
+}
+
+.a-mid-left-cont__first {
+    margin-bottom: $block-marg;
+
+}
+.a-mid-left-cont__second {
+    margin-bottom: $block-marg;
+
+}
+.a-mid-left-cont__third {
+   margin-bottom: $inblock-marg ;
+}
+h6 {
+    margin-bottom: $inblock-marg;
+}
+h2 {
+    margin-bottom: $inblock-marg;
+}
+.a-mid-left-cont__par {
+    margin-bottom: 3.375rem;
+}
+.a-background-pic {
+    margin-bottom: 2rem;
+}
+.button-situated {
+    display: block;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .a-mid-left-cont {
+        display: flex;
+
+
+    }
+
+}
+
+
+
