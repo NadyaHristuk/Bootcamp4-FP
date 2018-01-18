@@ -13,7 +13,7 @@
 .b-text-bold--ul {
     color:$button ;
     text-transform: inherit;
-    margin-left: rem(16);
+    margin-left: 2%;
     column-count: 2;
     list-style: none;
     //font-size: rem(0.8);
@@ -22,10 +22,9 @@
 .b-text-bold--link {
     color:$button ;
     text-transform: inherit;
-    font-size: rem(0.8);
+    font-size: rem(14);
     text-decoration: none;
 }
-
 .b-list-li:before {
     content: '>';
     font-weight: bold;
@@ -92,6 +91,18 @@ margin: auto;
     font-weight: bold;
     font-size: rem(21)
 }
+@media (min-width: 480px) {
+    .b-text-bold--link {
+        font-size: rem(20);
+    }
+    .text-bold {
+        line-height: rem(40);
+    }
+    .b-text-bold--ul {
+        margin-left: 8%;
+    }
+
+}
 @media (min-width: 768px) {
   .b-sidebar {
       padding-left: 60px;
@@ -99,6 +110,9 @@ margin: auto;
   }
     .b-text-bold--ul {
         font-size: rem(20);
+    }
+    .b-text-bold--link {
+        font-size: rem(25);
     }
     .b-list-li {
         margin-bottom: 10px;
