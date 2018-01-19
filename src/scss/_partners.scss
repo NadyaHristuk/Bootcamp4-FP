@@ -7,10 +7,13 @@
     font-size: rem(40);
     text-align: center;
 }
-.c-wrapper-partner .sub-title:after{
+.c-wrapper-partner{
+    padding-bottom: rem(85);
+}
+.c-wrapper-partner:after{
     content: "";
     display: none;
-    position: relative;
+    position: absolute;
     width: rem(7);
     height: rem(50);
     background-color: #000000;
@@ -115,6 +118,22 @@
     width: 92px; height: 16px;
     background: url('../images/partners/css_sprites.png') -141px -150px;
 }
+.c-wrapper-awards{
+    position: relative;
+}
+.c-wrapper-awards:before{
+    display: none;
+    content: "goit";
+    position: absolute;
+    color: rgba(0,0,0,0.1);
+    font-family: "AcromExtrabold" ,sans-serif;
+    transform: rotate(90deg);
+    top: rem(-172);
+    left: 5%;
+    //line-height: rem(130);
+    text-transform: uppercase;
+    font-size: rem(200);
+}
 .c-tender .text{
     text-transform: none;
     background-color: #000000;
@@ -165,10 +184,7 @@
     margin-bottom: rem(15);
     justify-content: space-between;
 }
-//.c-award-text{
-//    flex-basis: 50%;
-//    margin: 0 auto;
-//}
+
 
 .c-award .text-small:nth-child(2){
     text-transform: none;
@@ -221,7 +237,7 @@
 // Media from tablet 960
 @media (min-width: 960px) {
     .c-block-partners h1:first-child{
-        width: 30%;
+        width: rem(300);
         margin: 0 0 rem(15) 0;
     }
     .c-wrapper-partner{
@@ -255,8 +271,6 @@
     .c-awards p:first-child{
         flex-basis: 100%;
         text-align: start;
-
-
     }
     .c-awards .text:first-child{
 
@@ -277,6 +291,29 @@
     }
 
 }
+//Media 1024
+@media (min-width: 1024px) {
+    .c-wrapper-awards:before{
+        display: block;
+    }
+    .c-tender h3{
+        width: rem(330);
+    }
+    .c-wrapper-partner:after{
+        left: rem(283);
+        top: rem(195);
+        display: block;
+    }
+    .c-block-partners h1:first-child{
+        margin: 0;
+    }
+    .c-tender__oon-img {
+        top: rem(-8);
+        left: 65%;
+        max-width: 50%;
+    }
+
+}
 //Media 1440
 @media (min-width: 1440px) {
     .c-block-partners{
@@ -287,6 +324,32 @@
         font-size: rem(48);
         //margin: ;
     }
-
+    .c-wrapper-partner:after{
+        top: rem(432);
+        left: rem(332);
+    }
+    .c-wrapper-awards:before{
+        left: 7%;
+    }
+    .c-tender p:first-child{
+        text-align: left;
+        margin-bottom: rem(20);
+    }
+    .c-tender .text{
+        margin-bottom: rem(40);
+        text-align: left;
+    }
+    .c-tender h3{
+        text-align: left;
+        margin: 0 0 rem(20) 0;
+    }
+    .c-wrapper-winner{
+        margin-top: rem(-80);
+    }
+    .c-tender__oon-img {
+        top: rem(8);
+        left: 52%;
+        max-width: 40%;
+    }
 
 }
