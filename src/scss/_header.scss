@@ -33,6 +33,9 @@
     top: rem(50);
     right: 50%;
     transform: translate(50%);
+    font-weight: bold;
+    z-index: 1;
+    width: 100%;
 }
 
 .nav-list--show {
@@ -43,6 +46,13 @@
     text-decoration: none;
     @extend .text-small;
     font-size: rem(12);
+    color: #ff6b08;
+}
+
+.nav__item {
+    background-color: #feffff;
+    color: white;
+    padding: rem(5) 0;
 }
 
 @media (min-width: 768px) {
@@ -72,6 +82,7 @@
 
     .nav__link {
         font-size: rem(10);
+        color: #000000;
     }
 
     .nav__link:hover {
