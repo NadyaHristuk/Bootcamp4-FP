@@ -231,5 +231,8 @@ $background-word:rgba(0, 0, 0, .05);
     color: $white;
 }
 
-
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
