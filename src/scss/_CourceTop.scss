@@ -1,6 +1,6 @@
 
 
-.a-cource-main {
+.a-course {
    position: relative;
     padding: 0 15px;
     min-width: rem(320);
@@ -8,17 +8,17 @@
     margin: auto;
 }
 
-.a-cource__title {
+.a-course__title {
     @extend .title-main;
     font-size: 50px;
     line-height: rem(50);
     //margin-bottom: rem(48);
     position: relative;
     width: rem(300);
-    margin: 0 0 rem(48);
+    margin: 0 auto rem(48);
     text-align: center;
 }
-.a-cource__title:before {
+.a-course__title:before {
     content: "<h>";
     font-family: "AcromBold" ,sans-serif;
     font-size: rem(12);
@@ -28,7 +28,7 @@
     top: rem(20);
     left: rem(0);
 }
-.a-cource__title:after {
+.a-course__title:after {
     content: "</h>";
     font-family: "AcromBold" ,sans-serif;
     font-size: rem(12);
@@ -39,77 +39,89 @@
     left: 80%;
 }
 
-.a-top__txt {
+.a-course__txt {
     margin-bottom: rem(38) ;
     font-family: "Acrom" ,sans-serif;
     font-size: rem(16);
     color: $main-text;
 }
-.a-top__txt:last-child {
+.a-course__txt:last-child {
     margin-bottom: 0;
 }
-.a-chapter-pic{
+.a-course__pic{
     display: block;
     width: 100%;
     margin-top: rem(38);
 }
-.a-chapter-pic:after {
-    display: none;
-    content: "GOIT";
-    @extend.title-main;
-    transform: rotate(90deg);
-    //color: #17ecff;
-    color:$background-word;
-    position: absolute;
-    font-size: 260px;
-    top: rem(240);
-    left: 28%;
-    z-index: -1;
-}
 
 @media (min-width: 768px) {
-    .a-courceTop {
+    .a-course__pic:after {
+        content: "GOIT";
+        transform: rotate(90deg);
+        color:$background-word;
+        position: absolute;;
+        z-index: -1;
+        font-family: "AcromExtrabold" ,sans-serif;
+        font-size: rem(180);
+        top: 15%;
+        left: rem(-8);
+    }
+    .a-course__top {
         display: flex;
         justify-content: center;
     }
     .a-chapter {
         width: 43%;
     }
-    .a-chapter-pic {
+    .a-course__pic {
         width: 43%;
+        position: relative;
     }
-    .a-chapter-pic:after{
-        display: block;
+}
+
+@media (min-width: 960px) {
+    .a-course__title {
+        margin: 0 0 rem(48);
     }
 
+    .a-course__pic:after {
+        left: rem(40);
+    }
 }
+
 @media (min-width: 1024px) {
 
-    .a-cource__title {
+    .a-course__title {
         font-size: rem(100);
         line-height: rem(100);
         width: rem(460);
     }
 
-    .a-cource__title:after {
-
+    .a-course__title:after {
         bottom: rem(-45);
         left: 90%;
     }
-    .a-chapter-pic:after{
-        left: 46%;
+    .a-course__pic:after{
+        left: 14%;
     }
-
-
-}
-
-@media (min-width: 1440px) {
 
     .a-chapter {
-        width: 31%;
+        width: 50%;
     }
-    .a-chapter-pic:after{
-        left: 63%;
+}
+
+@media (min-width: 1140px) {
+
+    .a-course__top {
+        justify-content: space-evenly;
+    }
+
+    .a-chapter {
+        width: 41%;
+    }
+    .a-course__pic:after{
+        left: 15%;
+        font-size: rem(200);
     }
 
 }

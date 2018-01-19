@@ -1,15 +1,19 @@
-.a-cource-bottom {
+.a-course__bottom {
     margin-top: rem(50);
+    margin-bottom: rem(100);
 }
 
-.a-cource-bottom__link {
+.a-course__link {
 @extend.title-third;
     text-decoration: none;
 
 }
-.a-cource-bottom__list {
+.a-course__item {
     margin-bottom: rem(100);
+}
 
+.a-course__item:last-child {
+    margin-bottom: 0;
 }
 
 .a-sub-title {
@@ -41,27 +45,19 @@
 }
 
 @media (min-width: 768px) {
-    .a-courceBottom {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-content: center;
+    .a-course__item {
+        margin-left: 7%;
     }
-
-    .a-cource-bottom__list {
-        display: block;
-        width: rem(350);
-    }
-
-
 }
-@media (min-width: 1440px) {
-    .a-courceBottom {
-        flex-direction:column;
-        padding-left: rem(195);
-    }
-    .a-courceBottom {
-        padding-bottom: rem(100);
-    }
 
+@media (min-width: 1024px) {
+    .a-course__item {
+        margin-left: 3%;
+    }
+}
+
+@media (min-width: 1140px) {
+    .a-course__item {
+        margin-left: 5%;
+    }
 }
