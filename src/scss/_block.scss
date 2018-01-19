@@ -1,0 +1,166 @@
+
+/* Page 'CONTACTS, bottom'*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+.a-contact__wrapper {
+    min-width: rem(320);
+    max-width: rem(1440);
+    padding: rem(10) rem(10);
+}
+
+.a-lesser-contact__wraper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.a-portret {
+    display: inline-flex;
+    margin:0 auto rem(39);
+
+}
+
+.a-portret__wrapper:last-child {
+    margin-bottom: rem(20);
+}
+
+.a-portret-photo {
+    width: rem(98);
+    height: rem(98);
+    margin-right: rem(8);
+}
+/* Contacts of our VIP */
+.a-portret__content {
+    font-family: Acrom;
+    text-align: left;
+    display: inline-block;
+    width: rem(200);
+    line-height: rem(21);
+
+}
+.a-name {
+    color:  $title;
+    font-size: rem(18);
+    font-weight: 900;
+
+}
+.a-job {
+    color:  #ffffff;
+    font-size: rem(12);
+    font-weight: 500;
+    background-color: $title;
+    display: inline-block;
+
+}
+.a-role-in-company, .a-email-contact {
+    color:  #6b6f7a;
+    font-size: rem(14);
+    font-weight: 400;
+}
+
+
+
+.a-wrapped-email {
+    color:  $title;
+    font-size: rem(14);
+    font-weight: 900
+}
+
+.a-contact-link {
+    color: $button;
+}
+
+.a-contact-link:hover {
+    
+}
+
+.a-contact-link:active {
+
+}
+
+
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 960px) {
+    .a-lesser-content__wrapper {
+        justify-content: space-between;
+    }
+    .a-portret-photo {
+        margin-right: rem(14);
+    }
+
+    .a-name {
+        margin-bottom: rem(10);
+    }
+
+    .a-role-in-company, .a-email-contact {
+        padding-top: rem(12);
+        padding-bottom: rem(16);
+    }
+
+    .a-email-contact {
+        padding-top: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .a-portret-photo {
+        margin-right: rem(20);
+    }
+
+    .a-portret {
+        flex-basis: 30%;
+    }
+    .a-name {
+        margin-bottom: rem(14);
+    }
+
+    .a-role-in-company, .a-email-contact {
+        padding-top: rem(18);
+        padding-bottom: rem(24);
+    }
+
+    .a-email-contact {
+        padding-top: 0;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+    .a-portret-photo {
+        margin-right: rem(30);
+    }
+
+    .a-portret {
+        flex-basis: 30%;
+    }
+    .a-name {
+        margin-bottom: rem(16);
+    }
+
+    .a-role-in-company, .a-email-contact {
+        padding-top: rem(20);
+        padding-bottom: rem(26);
+    }
+
+    .a-email-contact {
+        padding-top: 0;
+    }
+
+
+}
+
