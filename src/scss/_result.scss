@@ -5,7 +5,7 @@
     margin: 0 auto;
 }
 
-.a-result__title {
+.a-result__title-bottom {
     margin-bottom: rem(40);
 }
 
@@ -13,7 +13,7 @@
     margin-bottom: rem(40);
 }
 
-.a-result__title {
+.a-result__title-bottom {
     text-align: center;
 }
 .a-result__text {
@@ -50,7 +50,7 @@
         justify-content: space-between;
     }
 
-    .a-result__title {
+    .a-result__title-bottom {
         margin-top: 0;
     }
 
@@ -65,7 +65,7 @@
     .a-result__box {
         flex-basis: 45%;
     }
-    .a-result__title {
+    .a-result__title-bottom {
         text-align: left;
     }
 }
