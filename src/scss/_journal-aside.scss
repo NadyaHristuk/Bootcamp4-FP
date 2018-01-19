@@ -1,5 +1,6 @@
 .b-sidebar {
     background-color: $white;
+    padding: 0 rem(20);
 }
 .b-list-sidedar{
     padding-left: rem(1);
@@ -8,7 +9,8 @@
 .b-title--sidebare {
     text-align: center;
     margin-bottom: rem(35);
-    font-size: rem(45);
+    font-size: rem(41.8);
+    text-transform: inherit;
 }
 .b-text-bold--ul {
     color:$button ;
@@ -22,14 +24,14 @@
 .b-text-bold--link {
     color:$button ;
     text-transform: inherit;
-    font-size: rem(14);
+    font-size: rem(12);
     text-decoration: none;
 }
 .b-list-li:before {
     content: '>';
     font-weight: bold;
     color: $title;
-    font-size: rem(24);
+    font-size: rem(16);
     margin-right: rem(16);
 }
 
@@ -58,8 +60,8 @@
 }
 .b-text-bold--form {
     color: $dark-blue ;
-    margin-top: rem(20);
-    margin-bottom: rem(20);
+    margin-top: rem(10);
+    //margin-bottom: rem(20);
     text-transform: inherit;
 }
 .b-input {
@@ -72,21 +74,21 @@
     line-height: rem(40);
     color: $white;
     font-size: rem(15);
-    margin-bottom: rem(30);
+    margin-bottom: rem(10);
 }
 .b-input::placeholder {
   @extend .text-small;
   color: $white;
     text-transform: inherit;
-    font-size: rem(20);
+    font-size: rem(18);
 }
 
 .b-button--form {
     display: block;
 margin: auto;
     border: none;
-    padding-left : rem(50);
-    padding-right: rem(50);
+    padding-left : rem(34);
+    padding-right: rem(34);
     margin-top: rem(30);
     font-weight: bold;
     font-size: rem(21)
@@ -101,6 +103,23 @@ margin: auto;
     .b-text-bold--ul {
         margin-left: 8%;
     }
+    .b-input::placeholder {
+        font-size: rem(22);
+    }
+
+    .b-button--form {
+        padding-left : rem(82);
+        padding-right: rem(82);
+    }
+    .text-bold {
+        font-size: rem(19.2);
+        margin-bottom: rem(14);
+        margin-top: rem(22);
+    }
+    .b-list-li:before {
+        font-size: 2rem;
+
+    }
 
 }
 @media (min-width: 768px) {
@@ -113,6 +132,10 @@ margin: auto;
     }
     .b-text-bold--link {
         font-size: rem(25);
+    }
+    .b-text-bold--form {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .b-list-li {
         margin-bottom: 10px;
@@ -145,7 +168,7 @@ margin: auto;
        padding-right: rem(48);
        padding-left: rem(48);
        font-size: rem(12);
-       margin-top: 0;
+       margin-top: rem(18);
    }
     .b-input::placeholder {
         font-size: rem(16);
@@ -160,41 +183,54 @@ margin: auto;
 }
 
 @media (min-width: 960px) {
-    .b-journal-top-text {
-        font-size: rem(84);
-        width: 77%;
-    }
+
     .b-button--form {
-        margin-top: rem(20);
+        margin-top: rem(36);
     }
     .b-form-sidebare {
-        padding-top: 3.5rem;
-        padding-left: 3.5rem;
-        padding-bottom: 3.5rem;
-        padding-right: 3.5rem;
+        padding-top: 3rem;
+        padding-left: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .b-title-third--form {
+        font-size: rem(23.6);
+    }
+    .b-text-bold--form {
+        margin-top:rem(20);
+        margin-bottom: rem(8);
+    }
+    .b-input::placeholder {
+        font-size: rem(20);
+    }
+    .b-title--sidebare {
+        font-size: rem(54);
+    }
+    .b-list-sidedar {
+        margin-bottom: rem(60);
     }
 }
-
 
 @media (min-width: 1024px) {
     .b-text-bold--ul {
         column-count: 1;
     }
-.journal {
-    display: flex;
-}
+    .journal {
+        display: flex;
+    }
     .b-aside {
         flex-direction: column;
         padding: 0;
     }
     .b-title--sidebare {
         margin-bottom: rem(35);
-        font-size: 22px;
+        font-size: rem(19);
         text-align: left;
         margin-left: 0;
     }
     .b-text-bold--ul {
         margin-left: 0;
+        line-height: rem(22.4);
     }
     .journal {
         margin-top: rem(180);
@@ -210,13 +246,30 @@ margin: auto;
         font-size: rem(17);
     }
     .b-button--form {
-        margin-top: 0;
+        margin-top: rem(30);
     }
-
-}
-
-@media (min-width: 1440px) {
     .b-text-bold--link {
-        font-size: rem(23);
+        font-size: rem(16);
     }
+    .b-input::placeholder {
+        font-size: rem(15);
+    }
+    .b-list-sidedar {
+        margin-bottom: rem(50);
+    }
+    .b-list-li {
+        margin-bottom: 0;
+        line-height: rem(24);
+    }
+    .b-list-li:before {
+        font-size :rem(22.4)
+    }
+
 }
+
+@media (min-width: 1140px) {
+
+}
+
+
+
