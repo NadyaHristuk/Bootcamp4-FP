@@ -74,10 +74,23 @@ body {
 
 
 }
+@media (min-width: 768px) {
+    .tags-orange {
+        text-align: left;
+    }
+    .a-text-transform__cleared {
+        text-align: left;
+    }
+    .a-slava-baran {
+        text-align: center;
+    }
+
+}
 
 
 .a-bot-mrgn__none {
     margin-bottom: rem(0);
+    text-align: c;
 }
 
 
