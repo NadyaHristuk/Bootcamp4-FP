@@ -1,7 +1,8 @@
 .b-main{
-    border-right: 1px dotted #e6dada;
-    border-left: 1px dotted #e6dada;
-
+    min-width: rem(320);
+    max-width: rem(1140);
+    padding: 0 rem(15);
+    margin: auto;
 }
 
 .b-main__text{
@@ -12,11 +13,19 @@
 
 .bold{
     background-color: #050505;
-    width: 67%;
-    display: block;
+    //width: 67%;
     margin: rem(10) auto;
     font-weight: bold;
+    font-family: "AcromBold", Arial, sans-serif ;
+}
 
+.b-all__bold{
+    text-align: center;
+    margin: rem(10) auto rem(15);
+}
+
+.b-team__descripton{
+    text-align: center;
 }
 
 .b-square{
@@ -26,12 +35,15 @@
 }
 
 .b-team{
-    display: block;
-    text-align: center;
+    //display: flex;
 }
 
 .b-team__img{
     margin: 0 auto rem(10);
+}
+
+.b-main__img{
+    margin-bottom: rem(10);
 }
 
 .b-team__img:last-child{
@@ -41,10 +53,20 @@
 .b-team__text{
     margin: 0 auto rem(5);
     text-transform: none;
+    font-family: AcromBold, Arial, sans-serif ;
 }
 
 .b-text__small{
     text-transform: none;
+}
+
+.text-small{
+    text-transform: none;
+    font-family: Acrom, Arial, sans-serif ;
+}
+
+.b-all-main__text{
+    text-align: center;
 }
 
 .b-what-do__text{
@@ -52,10 +74,16 @@
     display: block;
     text-transform: none;
     margin: 0 rem(5) rem(10) rem(5);
+    font-family: Acrom, Arial, sans-serif ;
 }
 
 .b-main__text-black{
     font-size: rem(22);
+    text-align: center;
+    font-family: AcromBold, Arial, sans-serif ;
+}
+
+.b-all_work{
     text-align: center;
 }
 
@@ -63,18 +91,23 @@
     text-align: left;
     margin: rem(10) 0 rem(10) rem(10);
 }
+
 .digits{
     padding: rem(10) 0;
+    font-family: AcromBold, Arial, sans-serif ;
 }
 
 .fact{
     padding-bottom: rem(10);
     font-weight: bold;
+    font-family: AcromBold, Arial, sans-serif ;
 }
+
 
 //and main style
 
 /*medeia for 480px*/
+
 
 @media (min-width:480px) {
     .b-results{
@@ -84,25 +117,26 @@
     .bold{
         width: 45%;
         font-weight: bold;
-
     }
 
     .b-small__text{
         font-size: rem(11);
         margin: 0 rem(10) 0 0;
-        text-transform: none;    }
+        text-transform: none;
+    }
 }
+
 
 /*medeia for 480px and*/
 
 /*medeia for 768px */
+
 
 @media (min-width:768px) {
     .bold{
         width: 39%;
         font-size: rem(25);
         font-weight: bold;
-
     }
 
     .all__team{
@@ -122,8 +156,8 @@
     }
 
     .b-what-do__text{
-            font-size: 12px;
-            margin-top: 30px;
+            font-size: rem(12);
+            margin-top: rem(30);
     }
 
     .all__results{
@@ -152,17 +186,35 @@
     }
 }
 
+
 /*medeia for 768px and*/
 
-/*medeia for 980px */
+/*medeia for 960px */
 
-@media (min-width:980px){
+
+@media (min-width:960px){
     .bold{
-        width: 37%;
+        width: 100%;
         font-size: rem(30);
         margin-bottom: rem(15);
         font-weight: bold;
+        display: block;
+    }
 
+    .b-all__bold{
+        width: rem(190);
+    }
+
+    .b-team{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: rem(10);
+    }
+
+    .all__team{
+        flex-basis: 40%;
     }
 
     .b-main__text-black{
@@ -170,19 +222,64 @@
         margin: rem(15) 0;
     }
 
+    .b-team__text{
+        font-size: rem(13);
+    }
+
     .b-what-do__text{
         font-size: rem(15);
-        margin-top: rem(60);
+        //margin-top: rem(60);
     }
 
     .b-results{
         margin-top: rem(100);
     }
+
+    .b-what-do__right{
+        flex-basis: 170%;
+        margin: rem(30) 0 0 rem(60);
+    }
+
+    .b-what-do_all{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: rem(50) 0;
+    }
+
+    .b-all_work{
+        width: rem(230);
+        text-align: left;
+    }
+
+    .b-all_result{
+        display: flex;
+        margin-bottom: rem(10);
+    }
+
+    .b-all-main__text{
+        width: rem(180);
+    }
+
+    .b-what-do__text{
+        margin: 0;
+    }
+
+    .b-results{
+        margin-top: 0;
+    }
+
+    .b-all__facts{
+        flex-basis: 125%;
+        margin: rem(50) rem(50) 0 0;
+
+    }
 }
 
-/*medeia for 980px and*/
+
+/*medeia for 960px and*/
 
 /*medeia for 1024px */
+
 
 @media (min-width:1024px){
     .b-team{
@@ -197,7 +294,7 @@
     }
 
     .b-team__img{
-        padding: 10px rem(5) 0 rem(5);
+        padding: rem(10) rem(5) 0 rem(5);
     }
 
     .bold{
@@ -218,7 +315,8 @@
     }
 
     .b-all__facts{
-        flex-basis: 70%;
+        flex-basis: 140%;
+        margin: rem(50) rem(30) 0 0;
     }
 
     .b-main__text-black{
@@ -235,14 +333,25 @@
 
 }
 
+
 /*medeia for 1024px and*/
 
 
 /*medeia for 1440px */
 
+
 @media (min-width:1440px){
     .bold{
         width: 29%;
         font-size: rem(35);
+    }
+
+    .b-all__bold{
+        width: rem(740);
+    }
+
+    .b-all__facts{
+        flex-basis: 150%;
+
     }
 }
