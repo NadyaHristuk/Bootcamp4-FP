@@ -1,9 +1,11 @@
 
 
-.a-courceTop {
+.a-cource-main {
    position: relative;
-
     padding: 0 15px;
+    min-width: rem(320);
+    max-width: rem(1140);
+    margin: auto;
 }
 
 .a-cource__title {
@@ -13,7 +15,8 @@
     //margin-bottom: rem(48);
     position: relative;
     width: rem(300);
-    margin: 0 auto rem(48);
+    margin: 0 0 rem(48);
+    text-align: center;
 }
 .a-cource__title:before {
     content: "<h>";
@@ -33,7 +36,7 @@
     color: rgba(27, 67, 113, 255);
     position: absolute;
     bottom: rem(-20);
-    left: 74%;
+    left: 80%;
 }
 
 .a-top__txt {
@@ -41,14 +44,16 @@
     font-family: "Acrom" ,sans-serif;
     font-size: rem(16);
     color: $main-text;
-    //width: 90%;
-
 }
-.a-chapterPic{
+.a-top__txt:last-child {
+    margin-bottom: 0;
+}
+.a-chapter-pic{
     display: block;
     width: 100%;
+    margin-top: rem(38);
 }
-.a-chapterPic:after {
+.a-chapter-pic:after {
     display: none;
     content: "GOIT";
     @extend.title-main;
@@ -70,10 +75,10 @@
     .a-chapter {
         width: 43%;
     }
-    .a-chapterPic {
+    .a-chapter-pic {
         width: 43%;
     }
-    .a-chapterPic:after{
+    .a-chapter-pic:after{
         display: block;
     }
 
@@ -91,7 +96,7 @@
         bottom: rem(-45);
         left: 90%;
     }
-    .a-chapterPic:after{
+    .a-chapter-pic:after{
         left: 46%;
     }
 
@@ -103,7 +108,7 @@
     .a-chapter {
         width: 31%;
     }
-    .a-chapterPic:after{
+    .a-chapter-pic:after{
         left: 63%;
     }
 

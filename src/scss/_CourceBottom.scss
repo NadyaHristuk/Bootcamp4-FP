@@ -1,15 +1,15 @@
-
-.a-courceBottom {
-    padding: 0 15px;
+.a-cource-bottom {
+    margin-top: rem(50);
 }
+
 .a-cource-bottom__link {
 @extend.title-third;
     text-decoration: none;
 
 }
 .a-cource-bottom__list {
-    padding-bottom: rem(50);
-    padding-top: rem(50);
+    margin-bottom: rem(100);
+
 }
 
 .a-sub-title {
