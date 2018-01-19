@@ -1,3 +1,7 @@
+.a-wrapper {
+    position: absolute;
+    width: 100%;
+}
 .b-project2-top-block {
     width: 100%;
     background-image: url(../images/project2.jpg);
@@ -5,6 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 rem(16) rem(16) rem(16) ;
+    padding-top: rem(252);
 }
 .b-title-main--white2 {
     color: $white;
