@@ -4,6 +4,7 @@
     padding: 1rem;
     position: relative;
     margin: auto;
+    margin-bottom: rem(40);
 }
 .sub-title {
     font-size: 1.3rem;
@@ -14,8 +15,13 @@
 }
 .b_project {
     position: relative;
-    margin-bottom: rem(10);
+    margin-bottom: rem(40);
 }
+
+.b_project:last-child {
+    margin-bottom: 0;
+}
+
 .b_project__link {
     color:  $button;
     font-size: rem(12);
