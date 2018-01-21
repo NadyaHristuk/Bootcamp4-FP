@@ -8,31 +8,32 @@ sup {
     max-width: rem(1140);
     padding: rem(15);
     margin-top: rem(50);
+    text-align: center;
+    margin: 0 auto;
 }
 
+.a-top-block {
+    margin-bottom: rem(30);
+}
 
-.a-text-h1-decor {
-    text-align: center;
+.a-top-info-wrapper {
+    margin-bottom: rem(15);
+}
+
+.a-top-title {
+    font-size: rem(46);
+    line-height: rem(60);
     position: relative;
+
 }
 
-.a-small-box-wrapper {
-    display: block;
-    margin-bottom: rem(57);
-}
-
-.a-text-h3-decor {
-    text-align: center;
-    margin-bottom: rem(20);
-}
-
-.a-text-transform__cleared {
+.a-top-info-wrapper p {
     text-transform: none;
-    text-align: center;
 }
 
-.a-text-bolow-h1 {
-    margin-bottom: rem(36);
+.a-text-fat {
+    color: black;
+    font-weight: 900;
 }
 
 //Contack me form
@@ -43,10 +44,9 @@ sup {
     padding-left: rem(40);
     padding-bottom: rem(40);
     padding-right: rem(40);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: rem(457);
+    margin: 0 auto;
+
 }
 
 .a-title-third--form {
@@ -65,6 +65,7 @@ sup {
     margin-bottom: rem(20);
     text-transform: inherit;
     font-size: rem(12);
+    text-align: center;
 }
 
 
@@ -81,6 +82,7 @@ sup {
     margin-bottom: rem(15);
 
 
+
 }
 
 
@@ -90,29 +92,19 @@ sup {
     color: $white;
     text-transform: inherit;
     font-size: rem(14);
-}
-//contact me form end
-
-
-.a-content-part {
-    display: block;
-    margin-bottom: rem(30);
+    text-align: center;
 }
 
-.a-content-part h1 {
-    width: rem(290);
-    margin: 0 auto;
+.a-input[type=email] {
+    @extend .text-small;
+    color: $white;
+    text-transform: none;
+    font-size: rem(14);
+    text-align: center;
+
 }
 
-
-.a-format-data {
-    display: block;
-    margin-bottom: rem(15);
-    flex-basis: 60%;
-}
-
-
-.a-button {
+.a-form-button {
     display: block;
     margin: auto;
     border: none;
@@ -121,135 +113,115 @@ sup {
     text-align: center;
     padding: rem(16.5) rem(54)
 }
+//contact me form end
 
-.a-btn-im-in {
-    padding: rem(16.5) rem(22);
+.a-button-bottom {
+    display: block;
+    margin: auto;
+    border: none;
+    font-weight: 900;
+    font-size: rem(12);
+    text-align: center;
+    padding: rem(16.5) rem(54);
 }
 
-.a-img-display {
+.a-img-wrapper {
     display: none;
-    margin-bottom: rem(25);
 }
 
-@media (min-width: 480px) {
-    .a-format-data {
-        flex-basis: auto;
-    }
+.a-bot-info-wrapper {
+    margin-bottom: rem(15);
+}
 
+.a-bot-info-wrapper h3 {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(24);
+    text-transform: uppercase;
+    line-height: rem(30);
+    color: $title;
+    margin-bottom: rem(10);
+}
+
+.a-bot-info-wrapper p {
+    text-transform: none;
+    font-size: rem(14);
+}
+
+.a-how-to-find__wrapper h4, p {
+    text-transform: none;
+}
+
+.a-how-to-find__wrapper h4 {
+    font-size: rem(16);
+    color: $title;
+    margin-bottom: rem(10);
+}
+
+.a-how-to-find__wrapper p {
+    font-size: rem(14);
+}
+
+.a-how-to-find__wrapper div {
+    margin-bottom: rem(10);
 }
 
 @media (min-width: 768px) {
-
-    .a-small-box-wrapper{
+    .a-how-to-find__wrapper {
         display: flex;
-    }
-
-    .a-flex-second-wrapper {
-        display: flex;
-    }
-
-    .a-content-flex {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
-    .a-content-flex > .a-format-data {
-        flex-basis: 25%;
-    }
-
-    .a-flex-first-wrap {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
-    .a-flex-wrap {
         flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+        justify-content: space-between;
     }
-
-    .a-img-options {
-        width: rem(326);
-    }
-
-    .a-format-data {
-        flex-basis: 45%;
-    }
-
-    .a-text-bolow-h1 {
-        margin-bottom: rem(5);
-    }
-
 }
 
-
-@media (min-width: 960px) {
-    .a-content-part h1 {
-        width: 100%;
-        margin: 0;
-    }
-
-    .a-top__h1-wrapper {
-        max-width: rem(600);
-    }
-
-    .a-text-transform__cleared {
+@media (min-width: 980px){
+    .a-events-wrapper {
         text-align: left;
-        font-size: rem(14);
-    }
-    .a-text-tiny-fit {
-        font-size: rem(14);
     }
 
-    .a-flex-second-wrapper {
+    .a-top-block {
         display: flex;
     }
 
-    .a-flex-wrap {
-        justify-content: space-evenly;
+    .a-top-title {
+        font-size: rem(60);
     }
 
-    .a-img-display {
+    .a-top-info-wrapper p.a-small-contaier:first-of-type {
+        margin-bottom: rem(10);
+    }
+
+    .a-bottom-block {
         display: flex;
-        width: 38%;
+        justify-content: space-around;
+
+    }
+
+    .a-img-wrapper {
+        display: block;
+        width: 40%;
     }
 
     .a-img-options {
         width: 100%;
     }
 
-    .a-content-flex {
-        width: 15%;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0;
+    .a-bot-info-wrapper {
+        width: 36%;
+    }
+
+    .a-how-to-find__wrapper {
+        position: relative;
         display: block;
-    }
-
-    .a-last__format-data {
+        text-align: left;
+        width: 14.6%;
         margin: 0;
     }
 
-    .a-format-data {
-        text-align: left;
-    }
+    .a-button-bottom {
+        padding: rem(16.5) rem(15);
 
-    .a-content-responsive {
-        width: 35%;
-    }
-
-    .a-text-bolow-h1 {
-        margin-bottom: rem(25);
-        width: 82%;
-    }
-
-    .a-text-h3-decor {
-        text-align: left;
-        font-size: rem(20);
-    }
-
-    .a-text-h1-decor {
-        text-align: left;
-        font-size: rem(55);
     }
 
 }
@@ -257,39 +229,26 @@ sup {
 @media (min-width: 1024px) {
     .a-events-wrapper {
         padding: 0;
-        margin: rem(120) auto;
-
+        margin-top: rem(100);
     }
 
-    .a-form-sidebar {
-        background-color: #181c27;
-        padding-top: rem(40);
-        padding-left: rem(40);
-        padding-bottom: rem(40);
-        padding-right: rem(40);
+    .a-top-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(200);
     }
 
-    .a-title-third--form {
-        padding: 0 rem(30);
+    .a-top-info-wrapper {
+        max-width: rem(595);
     }
 
-    .a-text-tiny-fit {
-        font-size: rem(16);
-    }
-
-    .a-top__h1-wrapper h1 {
+    .a-top-title {
         font-size: rem(100);
         line-height: rem(100);
-        width: rem(595);
-        margin: 0;
+        margin-bottom: rem(20);
     }
 
-    .a-tiny-wrapper {
-        width: 71.5%;
-    }
-
-
-    .a-top__h1-wrapper h1::before {
+    .a-top-title::before {
         content: '<h>';
         font-family: "Acrom" ,sans-serif;
         font-size: rem(10);
@@ -301,7 +260,7 @@ sup {
         text-transform: none;
     }
 
-    .a-top__h1-wrapper h1::after {
+    .a-top-title::after {
         content: '</h>';
         font-family: "Acrom" ,sans-serif;
         font-size: rem(10);
@@ -314,39 +273,76 @@ sup {
         display: block;
     }
 
-}
+    .a-small-contaier {
+        width: 83.4%;
+        margin-bottom: rem(23);
+    }
 
-@media (min-width: 1140px) {
-    .a-events-wrapper {
-        padding: 0;
-        margin: rem(120) auto;
+    .a-smaller-container {
+        width: 71.5%;
     }
 
     .a-form-sidebar {
-        height: rem(465);
-        width: rem(457);
-        padding: rem(85);
-        text-align: center;
+        width: 39.9%;
+        max-height: rem(400);
+        max-width: rem(457);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0;
     }
 
+    .a-text-bold--form {
+        margin-top: rem(40);
+
+    }
 
     .a-input {
-        margin-bottom: rem(50);
+        margin-bottom: rem(30);
     }
 
-    .a-input::placeholder{
-        text-align: center;
-        margin-bottom: rem(25);
 
-    }
-    .a-title-third--form {
-        font-size: rem(24);
-        padding: 0 rem(20);
+
+
+}
+
+@media (min-width: 1140px) {
+    .a-top-block {
+        margin-bottom: rem(290);
     }
 
-    .a-img-display {
-        width: rem(488);
-        height: rem(420);
+    .a-top-title {
+        margin-bottom: rem(47);
+    }
+
+    .a-small-contaier {
+        margin-bottom: rem(36);
+    }
+
+    .a-bottom-block {
+        justify-content: space-between;
+    }
+
+    .a-bot-info-wrapper {
+        width: rem(326);
+    }
+
+    .a-bot-info-wrapper h3 {
+        margin-bottom: rem(39);
+    }
+
+    .a-bot-info-wrapper p {
+        width: rem(316);
+    }
+
+    .a-form-sidebar {
+        max-height: rem(465);
+        padding-right: rem(91);
+        padding-left: rem(92);
+    }
+
+        .a-button-bottom {
+        padding: rem(16.5) rem(21);
     }
 
 
