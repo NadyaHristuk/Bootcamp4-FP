@@ -23,7 +23,7 @@ $background-word:rgba(0, 0, 0, .05);
     src: url("../fonts/Acrom W00 ExtraBold.otf");
 }
 @font-face {
-    font-family: "HammersmithOne";
+    font-family: "AcromMedium";
     src: url("../fonts/Acrom W00 Medium.otf");
 }
 @font-face {
@@ -31,7 +31,7 @@ $background-word:rgba(0, 0, 0, .05);
     src: url("../fonts/Acrom W00 Regular.otf");
 }
 @font-face {
-    font-family: "HammersmithOne";
+    font-family: "AcromLight";
     src: url("../fonts/Light.otf");
 }
 * {
@@ -64,6 +64,14 @@ $background-word:rgba(0, 0, 0, .05);
     color: $title;
 }
 
+.title-fourth {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(18);
+    text-transform: uppercase;
+    line-height: rem(30);
+    color: $title;
+}
+
 .text-bold {
         font-family: "AcromBold" ,sans-serif;
         font-size: rem(16);
@@ -75,14 +83,12 @@ $background-word:rgba(0, 0, 0, .05);
 .text {
     font-family: "Acrom" ,sans-serif;
     font-size: rem(16);
-    text-transform: uppercase;
     line-height: rem(24);
     color: $main-text;
 }
 .text-small {
     font-family: "Acrom" ,sans-serif;
     font-size: rem(14);
-    text-transform: uppercase;
     line-height: rem(21);
     color: $main-text;
 }
@@ -234,4 +240,15 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    min-width: rem(320);
+    padding: rem(30) rem(10);
+    margin: 0 auto;
+    position: relative;
 }

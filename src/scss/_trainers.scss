@@ -1,0 +1,225 @@
+.c-trainers-gallery {
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: rem(20);
+    }
+
+    &__picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__number {
+        font-family: "AcromExtraBold", sans-serif;
+        font-size: rem(10);
+        color: $title;
+        position: absolute;
+        top: rem(20);
+        left: rem(20);
+        z-index: 1;
+    }
+
+    .c-trainers-gallery__block:nth-child(n+2) {
+        display: none;
+    }
+}
+
+.sub-title span {
+    display: block;
+    position: relative;
+}
+
+.title-third__tl-line {
+    margin-top: rem(120);
+
+    &:before {
+        content: '';
+        width: rem(7);
+        height: rem(50);
+        background-color: $title;
+        position: absolute;
+        top: rem(-70);
+        left: rem(2);
+    }
+}
+
+.c-trainers-paging {
+    font-family: "AcromExtraBold", sans-serif;
+    font-size: rem(12);
+    color: $button;
+    margin: rem(30) 0 rem(50) 0;
+
+    &__numbers {
+        margin: 0 rem(30);
+    }
+
+    &__selected {
+        font-size: rem(30);
+    }
+
+    a {
+        font-size: rem(18);
+        color: $button;
+        text-decoration: none;
+    }
+}
+
+.c-text-small__back {
+    font-family: "AcromMedium", sans-serif;
+    font-size: rem(12);
+    text-transform: none;
+    line-height: rem(14);
+    color: $white;
+    background-color: $title;
+    padding: 0 rem(2);
+    display: inline-block;
+    margin-bottom: rem(20);
+}
+
+@media (min-width: 768px) {
+    .c-trainers-gallery {
+        display: flex;
+
+        .c-trainers-gallery__block:nth-child(n+2) {
+            display: block;
+        }
+
+        .c-trainers-gallery__block:nth-child(n+3) {
+            display: none;
+        }
+
+        .c-trainers-gallery__block:nth-child(even) {
+            margin-left: rem(20);
+        }
+
+        &__block {
+            min-width: rem(354);
+        }
+
+        &__img {
+            max-height: rem(354);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .c-trainers-title {
+        position: absolute;
+        left: 60%;
+        top: 0;
+    }
+
+    .c-trainers-gallery {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: rem(20);
+        position: relative;
+
+        &:after {
+            content: 'trainer';
+            font-family: 'AcromExtrabold', sans-serif;
+            font-size: rem(164);
+            color: $background-word;
+            text-transform: uppercase;
+            z-index: -1;
+            position: absolute;
+            bottom: rem(254);
+            right: rem(-130);
+            transform: rotate(90deg);
+        }
+
+        &__text {
+            h4 span {
+                display: block;
+                line-height: rem(20);
+            }
+
+            h4 span:last-child {
+                line-height: rem(30);
+            }
+        }
+
+        .c-trainers-gallery__block:nth-child(n) {
+            display: flex;
+            align-items: flex-end;
+            margin: 0;
+        }
+
+        .c-trainers-gallery__block:nth-child(n+4) {
+            display: none;
+        }
+
+        .c-trainers-gallery__block:nth-child(3n+1) {
+            flex-basis: 55%;
+            justify-content: space-between;
+
+            .c-trainers-gallery__item {
+                width: 60%;
+                height: rem(340);
+                margin-right: 7%;
+            }
+
+            .c-trainers-gallery__img {
+                height: rem(340);
+            }
+
+            .c-trainers-gallery__text {
+                width: 33%;
+            }
+        }
+
+        .c-trainers-gallery__block:nth-child(3n+2) {
+            flex-basis: 75%;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+
+            .c-trainers-gallery__item {
+                width: 57%;
+                height: rem(300);
+                margin-right: 10%;
+            }
+
+            .c-trainers-gallery__text {
+                width: 23%;
+                margin-right: 10%;
+            }
+
+            .c-trainers-gallery__number {
+                left: 87%;
+            }
+        }
+
+        .c-trainers-gallery__block:nth-child(3n+3) {
+            min-width: 0;
+            flex-basis: 25%;
+            flex-direction: column;
+            align-content: space-between;
+
+            .c-trainers-gallery__item {
+                width: 100%;
+                height: rem(214);
+                margin-bottom: rem(25);
+            }
+
+            .c-trainers-gallery__text {
+                padding-left: rem(30);
+            }
+
+            .c-trainers-gallery__number {
+                left: 83%;
+            }
+        }
+
+        &__item {
+            margin: 0;
+        }
+
+        &__img {
+            max-height: rem(350);
+        }
+    }
+}
