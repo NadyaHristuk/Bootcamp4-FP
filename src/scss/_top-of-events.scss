@@ -12,6 +12,14 @@ sup {
     margin: 0 auto;
 }
 
+.a-second-events-wrapper{
+    min-width: rem(320);
+    max-width: rem(1140);
+    padding: rem(15);
+    text-align: center;
+    margin: 0 auto;
+}
+
 .a-top-block {
     margin-bottom: rem(30);
 }
@@ -120,7 +128,7 @@ sup {
     padding: rem(16.5) rem(54);
 }
 
-.a-img-wrapper {
+.a-img-wrapper, .a-second-img-wrapper, .a-third-img-wrapper {
     display: none;
 }
 
@@ -160,6 +168,10 @@ sup {
 .a-how-to-find__wrapper div {
     margin-bottom: rem(10);
 }
+.a-bottom-block {
+    margin-bottom: rem(40);
+}
+
 
 @media (min-width: 768px) {
     .a-how-to-find__wrapper {
@@ -171,8 +183,12 @@ sup {
     }
 }
 
-@media (min-width: 980px){
+@media (min-width: 960px){
     .a-events-wrapper {
+        text-align: left;
+    }
+
+    .a-second-events-wrapper {
         text-align: left;
     }
 
@@ -197,6 +213,17 @@ sup {
     .a-img-wrapper {
         display: block;
         width: 40%;
+    }
+
+    .a-second-img-wrapper {
+        display: block;
+        width: 36.5%;
+    }
+
+
+    .a-third-img-wrapper {
+        display: block;
+        width: 31.5%;
     }
 
     .a-img-options {
@@ -231,6 +258,10 @@ sup {
         display: flex;
         justify-content: space-between;
         margin-bottom: rem(200);
+    }
+
+    .a-bottom-block {
+        margin-bottom: rem(150);
     }
 
     .a-top-info-wrapper {
@@ -294,6 +325,18 @@ sup {
 
     .a-input {
         margin-bottom: rem(30);
+    }
+
+    .a-bot-info-wrapper {
+        padding-top: rem(20);
+    }
+
+    .a-bot-info-wrapper h3 {
+        margin-bottom: rem(40);
+    }
+
+    .a-how-to-find__wrapper {
+        padding-top: rem(20);
     }
 
 }

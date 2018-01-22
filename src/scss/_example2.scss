@@ -61,6 +61,17 @@
     margin-bottom: 1rem;
 }
 
+.button-white {
+    display: block;
+    margin: auto;
+    border: none;
+    font-weight: 900;
+    font-size: rem(12);
+    text-align: center;
+    padding: rem(8) rem(32);
+    border: 2px solid $button;
+}
+
 @media (min-width: 480px) {
     .a-second-event__img {
         margin: 0 auto;
@@ -90,7 +101,7 @@
         margin-bottom: 1.5rem;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
     .events-block {
         display: flex;
         flex-direction: column;
@@ -119,6 +130,7 @@
 
     .a-second-event-info {
         flex-basis: 14.5%;
+        text-align: left;
     }
     .a-second-event__describe {
         flex-basis: 26.5%;
@@ -130,9 +142,7 @@
         margin-right: 0;
     }
     .a-second-event-info__text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+
     }
 }
 
