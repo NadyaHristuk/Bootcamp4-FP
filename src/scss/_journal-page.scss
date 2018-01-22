@@ -1,0 +1,400 @@
+
+a {
+    text-decoration: none;
+}
+
+/*STYLES FOR 320 RESOLUTION*/
+
+.title-main {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.title-third {
+    font-size: 0.7rem;
+    text-transform: initial;
+    line-height: 0.7rem;
+}
+
+.text-bold {
+    font-size: 0.65rem;
+    text-transform: initial;
+    line-height: 0.8rem;
+}
+
+.text {
+    font-size: 0.65rem;
+    text-transform: initial;
+    line-height: 0.9rem;
+}
+
+//JOURNAL-STYLES
+
+.journal {
+    padding: 2.5rem 0.9375rem;
+}
+
+.journal__title {
+    margin-bottom: 1rem;
+}
+
+.journal__title-img {
+    margin-bottom: 1.5rem;
+}
+
+.journal__text-bold {
+    margin-bottom: 1rem;
+}
+
+.journal__sub-title {
+    margin-bottom: 0.5rem;
+}
+
+.journal__text {
+    margin-bottom: 1rem;
+}
+
+.journal__img {
+    margin-bottom: 1rem;
+}
+
+//AUTHOR-STYLES
+
+.author__text-quote {
+    width: 73%;
+    margin: 0 auto 1rem;
+}
+
+.author__text-quote::before {
+    content: "[ ";
+    color: #17ecff;
+}
+
+.author__text-quote::after {
+    content: ' ]';
+    color: #17ecff;
+}
+
+.author__name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.author__text {
+    margin-bottom: 1rem;
+}
+
+.author__text-extraBold {
+    font-size: 0.8rem;
+}
+
+.author__text-name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.author__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.author__text-lowercase {
+    text-transform: initial;
+    line-height: inherit;
+}
+
+.author__tag {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.author__tag-container {
+    width: 55%;
+}
+
+.author__text-tag {
+    font-size: 0.65rem;
+    color: #ff6b08;
+}
+
+/*STYLES FOR 480 RESOLUTION*/
+
+@media (min-width: 480px) {
+
+    .title-main {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+
+    .text-bold {
+        font-size: 1.05rem;
+        line-height: 1.2rem;
+    }
+
+    .title-third {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .text {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    //JOURNAL-STYLES
+
+    .journal {
+        padding: 3rem 0.9375rem;
+    }
+
+    .journal__title-img {
+        margin-bottom: 2rem;
+    }
+
+    .journal__text-bold {
+        margin-bottom: 2.5rem;
+    }
+
+    .journal__text {
+        margin-bottom: 1.5rem;
+    }
+
+    .journal__img {
+        margin-bottom: 1.5rem;
+    }
+
+    //AUTHOR-STYLES
+
+    .author__text-quote {
+        margin: 0 auto 2rem;
+    }
+
+}
+
+/*STYLES FOR 768 RESOLUTION*/
+
+@media (min-width: 768px) {
+
+    //JOURNAL-STYLES
+
+    .journal {
+        padding: 3rem 3.3rem;
+    }
+    .journal__container {
+        margin-bottom: 3rem;
+    }
+
+    .journal__img {
+        margin: 0 auto 1.5rem;
+    }
+
+    .journal__text:last-child {
+        margin: 0;
+    }
+
+    //AUTHOR-STYLES
+
+    .author__text-quote {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 3rem;
+        margin-right: auto;
+    }
+
+    .author__name {
+        margin-bottom: 1rem;
+    }
+    .author__text {
+        width: 50%;
+        margin-left: auto;
+        margin-bottom: 2rem;
+    }
+
+    .author__text-name {
+        display: block;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .author__data {
+        margin-bottom: 2rem;
+    }
+
+    .author__tag {
+        margin-bottom: 2rem;
+    }
+
+    .author__tag-container {
+        width: 50%;
+    }
+}
+
+/*STYLES FOR 980 RESOLUTION*/
+
+@media (min-width: 980px) {
+
+    .title-main {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: initial;
+    }
+
+    .text {
+        font-size: 0.78rem;
+    }
+
+    .title-third {
+        font-size: 0.78rem;
+    }
+
+    .text-bold {
+        font-size: 0.8rem;
+    }
+
+    //JOURNAL-STYLES
+
+    .journal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 3rem 5.3rem;
+    }
+
+    .journal__container {
+        width: 60%;
+    }
+
+    .journal__text {
+        margin-bottom: 2rem;
+    }
+
+    .journal__title {
+        margin-bottom: 14.2rem;
+    }
+
+    .journal__title-img {
+        width: 60%;
+        position: absolute;
+        left: -0;
+        top: 16rem;
+        z-index: -1;
+        margin: 0;
+    }
+
+    //AUTHOR-STYLES
+
+    .author {
+        width: 30%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-bottom: 12rem;
+    }
+
+    .author__container {
+
+    }
+
+    .author__name {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .author__text {
+        width: inherit;
+        margin: 0 0 2rem 0;
+    }
+
+    .author__text-name {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .author__text-lowercase {
+        margin: 0 0 1rem 0;
+    }
+
+    .author__data {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .author__tag {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .author__text-quote {
+        width: initial;
+        margin: 0;
+    }
+
+    .author__tag-container {
+        width: initial;
+    }
+
+    .social {
+        width: 100%;
+    }
+}
+
+/*STYLES FOR 1024 RESOLUTION*/
+
+@media (min-width: 1024px) {
+
+    .author__name {
+        margin-bottom: 1.5rem;
+    }
+
+    .author__text-name {
+        margin-bottom: 0.6rem;
+    }
+
+    .author__text-name:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*STYLES FOR 1440 RESOLUTION*/
+
+@media (min-width: 1140px) {
+
+    .title-main {
+        font-size: 2.325rem;
+    }
+
+    .text-bold {
+        font-size: 0.91rem;
+    }
+
+    //JOURNAL-STYLES
+
+    .journal {
+        padding: 9.375rem 6.85rem;
+    }
+
+    .journal__container {
+        width: 61.2%;
+    }
+
+    .journal__title {
+        line-height: 2.5rem;
+        margin-bottom: 18.2rem;
+    }
+
+    .journal__title-img {
+        top: 22.7rem;
+    }
+    //AUTHOR-STYLES
+
+    .author {
+        width: 26%;
+        padding-bottom: 10.6rem;
+    }
+}
