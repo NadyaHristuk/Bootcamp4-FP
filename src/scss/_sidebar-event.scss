@@ -196,100 +196,15 @@ WAAAAGH!!!*/
     display: block;
     margin: auto;
 }
+
+
 .a-sidebar-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-//FB-footer
-//
-//.a-sidebar-footer {
-//    position: relative;
-//    width: 100%;
-//    border: rem(1) solid #e1e1e1;
-//    }
-//
-//.a-side__upper-footer {
-//    height: rem(130);
-//    border-bottom: rem(1) solid #e1e1e1;
-//    position: relative;
-//}
-//
-//.a-picture__small {
-//    height: rem(50);
-//    width: rem(50);
-//    background-color: #f1f1f1;
-//    display: inline-block;
-//    position: absolute;
-//    top: rem(10);
-//    left: rem(10);
-//}
-//    //Facebook LIKE button
-//.a-like__btn {
-//    height: rem(20);
-//    width: rem(137);
-//    position: absolute;
-//    bottom: rem(10);
-//    left: rem(10);
-//    display: flex;
-//    justify-content: space-evenly;
-//    background-color: #f6f7f9;
-//    border: none;
-//}
-//
-//.a-like__btn .a-reg__btn, a {
-//    font-family: Helvetica, Arial, sans-serif;
-//    text-decoration: none;
-//    vertical-align: middle;
-//    font-weight: 700;
-//    color: #4c5058;
-//    font-size: rem(11);
-//}
-//
-//.a-like__btn i {
-//    color: #395898;
-//}
-//.a-reg__btn {
-//    position: absolute;
-//    right: rem(10);
-//    bottom: rem(10);
-//    height: rem(20);
-//    width: rem(97);
-//    display: flex;
-//    background-color: #f6f7f9;
-//    border: rem(1) solid #d2d4d8;
-//    justify-content: space-around;
-//}
-//
-//.a-side__lower-footer {
-//    background-color: #f6f7f9;
-//    padding: rem(13) rem(10) rem(10) rem(10);
-//}
-//
-//.a-inside-footer__wrapper {
-//    font-family: Helvetica, Arial, sans-serif;
-//    font-size: rem(11);
-//    font-weight: 500;
-//    background-color: #fff;
-//    box-shadow: 1px 1px 1px 1px #edeef0;
-//    padding: rem(7);
-//    color: #4b4f56;
-//}
-//.a-inside-footer__wrapper p {
-//    padding-bottom: rem(7);
-//}
-//
-//.a-fb-ur-friend-like {
-//    height: rem(32);
-//    width: rem(32);
-//    margin-right: rem(2);
-//    background-color: #f1f1f1;
-//    display: inline-block;
-//}
-//
-//.a-fb-ur-friend-like:last-child {
-//    margin-right: rem(0);
-//}
-
-
+.a-button, .button-situated, .a-sidebar-button {
+    font-family: "AcromBold", sans-serif;
+    border: none;
+}
