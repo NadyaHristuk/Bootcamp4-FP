@@ -7,7 +7,7 @@
     flex-direction: column-reverse;
 }
 
-.c-gallery__img {
+.c-sphere-gallery__img {
     display: none;
 }
 
@@ -50,7 +50,7 @@
         position: relative;
     }
 
-    .c-gallery__img {
+    .c-sphere-gallery__img {
         display: block;
         position: absolute;
         width: 43%;
@@ -117,7 +117,7 @@
 
     }
 
-    .c-gallery__img {
+    .c-sphere-gallery__img {
         position: absolute;
         width: 40%;
         left: 32%;
@@ -163,7 +163,7 @@
         flex-basis: 57%;
     }
 
-    .c-gallery__img {
+    .c-sphere-gallery__img {
         left: 34%;
     }
 
@@ -194,7 +194,7 @@
         padding-top: rem(160);
     }
 
-    .c-gallery__img {
+    .c-sphere-gallery__img {
         left: 30%;
         top: 27%;
     }
