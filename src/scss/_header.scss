@@ -46,13 +46,13 @@
     text-decoration: none;
     @extend .text-small;
     font-size: rem(12);
-    color: #ff6b08;
+    color: #6b6f7a;
 }
 
-    .nav__item {
-        background-color: #feffff;
-        color: white;
-        padding: rem(5) 0;
+.nav__item {
+    background-color: #feffff;
+    padding: rem(5) 0;
+
 }
 
 @media (min-width: 768px) {
@@ -75,6 +75,7 @@
         font-size: rem(13);
         padding: rem(0) rem(10);
         position: relative;
+        background-color: transparent;
     }
     .burger-menu {
         display: none;
@@ -133,7 +134,7 @@
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
     .header {
         justify-content: flex-start;
     }
