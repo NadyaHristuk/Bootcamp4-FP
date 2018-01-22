@@ -16,3 +16,10 @@ var list =  Array.from(footerLi);
 list.forEach(function (item) {
   item.addEventListener('click', showModal)
 });
+
+var close = Array.from(document.querySelectorAll('.popup__close'));
+close.forEach(function (item) {
+  item.addEventListener('click', function () {
+    document.querySelector('#' + item.getAttribute('data-dismiss')).classList.toggle('modal--show');
+  })
+});
