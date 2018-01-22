@@ -31,7 +31,8 @@ $background-word:rgba(0, 0, 0, .05);
     src: url("../fonts/Acrom W00 Regular.otf");
 }
 @font-face {
-    font-family: "AcromLight";
+    //font-family: "AcromLight";
+    font-family: "Hammersmithlight";
     src: url("../fonts/Light.otf");
 }
 
@@ -254,6 +255,12 @@ img {
 
 .container {
     width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .wrapper {
