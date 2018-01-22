@@ -1,11 +1,9 @@
 .c-container__massmedia {
     min-width: rem(320);
-    max-width: rem(1440);
+    max-width: rem(1140);
     margin: auto;
     padding: 0 rem(15);
 }
-
-
 
 .c-massmedia-paging {
     font-family: "AcromExtraBold", sans-serif;
@@ -69,7 +67,7 @@
 @media (min-width: 480px) {
     .c-massmedia-title {
         width: 50%;
-        margin: auto;
+        //margin: auto;
     }
 
     .c-logo__item--company {
@@ -149,7 +147,7 @@
 
 @media (min-width: 1140px) {
     .c-logo__item {
-        width: rem(263);
+        width: rem(250);
         height: rem(176);
         margin: 0;
     }
@@ -160,7 +158,8 @@
     }
 
     .c-massmedia-title {
-        width: 23%;
+        width: 20%;
+        text-align: left;
     }
 }
 
