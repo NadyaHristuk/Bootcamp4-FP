@@ -11,9 +11,11 @@
      position: relative;
     padding-left: 15px;
     padding-right: 15px;
-    //text-align: center;
+    text-align: center;
+    overflow: hidden;
 
 }
+
 .header_backgroud{
     background-image: url("../images/header-bg-txt.jpg");
     background-repeat: no-repeat;
@@ -26,6 +28,7 @@
 .header_footer{
     color: #9f9fa1;
     font-family: "Acrom";
+    font-size: rem(14);
 
 }
 
@@ -37,6 +40,7 @@
     color: white;
     font-size: rem(88);
     line-height: rem(90);
+    //display: inline;
 
 }
 
@@ -47,7 +51,7 @@
     position: absolute;
     left: 0;
     font-family: "Acrom";
-    top: -50px;
+    top: -37px;
 }
 .header_name:after{
     content: "<h>";
@@ -82,49 +86,66 @@
 }
 @media (min-width: 768px) {
 
-    .header_image{
+    .header_image {
         display: block;
         position: absolute;
-        z-index:1;
+        z-index: 1;
         top: 13%;
         width: rem(440);
-        left: rem(300);
-
+        left: 41%;
 
     }
-    .header_name:after{
-            display: none;
-        }
-    .header_name:before{
+    .header_name:after {
+        display: none;
+    }
+    .header_name:before {
         font-size: rem(15);
     }
-.header_name {
-    line-height: rem(94);
-    font-size: rem(88);
-    width: rem(270);
-}
-    .name{
+    .header_name {
+        line-height: rem(94);
+        font-size: rem(88);
+        width: rem(270);
+        left: 12%;
+    }
+    .name {
         width: rem(100);
     }
-    .header__posit{
-    padding-top: rem(180);
+    .header__posit {
+        padding-top: rem(180);
     }
-    .header_footer{
-        padding-left: 0px;
+    .header_footer {
+        margin-left: rem(57);
+        text-align: left;
+        //padding-left: 0px;
     }
-    .header_backgroud{
+    .header_backgroud {
         background-position: 45% 50%;
 
-
     }
-@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 960px) {
+    .header_image {
+        left: 45%;
+    }
+
+    .header_name {
+        font-size: rem(85);
+    }
+
+    .header_footer {
+        text-align: left;
+    }
+}
+
+        @media (min-width: 1024px) {
     .header_image{
         width: rem(450);
         left: rem(550);
     }
     .header_name{
         font-size: rem(170);
-        width: rem(525);
         line-height:rem(160);
     }
  .header_name:before{
@@ -133,9 +154,8 @@
 }
     @media (min-width: 1140px) {
         .header_name{
-            font-size: rem(200);
-            width: rem(650);
-            line-height: rem(180);
+            font-size: rem(150);
+            line-height: rem(150);
         }
         .header_image{
             width: rem(500);
@@ -143,6 +163,7 @@
         }
         .header_footer{
            font-size: rem(20);
+            margin-left: rem(130);
         }
         .header__posit{
             padding-top: rem(180);
@@ -152,4 +173,4 @@
         }
     }
 
-}
+
