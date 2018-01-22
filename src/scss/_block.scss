@@ -1,0 +1,541 @@
+
+
+.wrapper__courses {
+
+    min-width: rem(320);
+    max-width: rem(1440);
+    margin: auto;
+
+    //background-image: url("../images/mantable.png");
+    //background-repeat: no-repeat;
+    //background-position: center;
+    padding: rem(100) rem(20);
+
+
+}
+.bild{
+    display: none;
+}
+
+.text-small__courses {
+    margin-bottom: rem(15);
+}
+
+.title-third__courses {
+    margin-bottom: rem(15);
+}
+
+// /*проблема с центрированием текста в квадрате строго по центру*/
+.black {
+    background-color: black;
+    color: white;
+    width: rem(224);
+  height: rem(50);
+  border-bottom: rem(58) solid #000000;
+}
+.over{
+   left: rem(30);
+}
+ .sub-title{
+    line-height: rem(-30);
+}
+.c-courses__title {
+    display: block;
+    margin-bottom: rem(20);
+
+}
+.c-courses__box-text::before{
+   content:"";
+    display: block;
+    width:rem(50);
+    height: rem(10);
+    background-color:black;
+    //margin-top: rem(5);
+}
+
+
+.c-courses__box-text{
+    margin-top: rem(50);
+    margin-bottom: rem(35);
+    padding: 0 rem(20);
+}
+
+.c-courses__text {
+    font-size: rem(14);
+}
+
+
+
+.c-programs__title-part {
+    display: block;
+}
+
+.button-small{
+    //margin-top: rem(25);
+}
+
+.cross {
+    border: none;
+    text-align: center;
+}
+
+.text-bold__block {
+    color:$white;
+    font-size: rem(24);
+}
+
+a{
+    text-decoration: none;
+}
+
+.c-courses__item:before{
+    //display: none;
+    content:"GOIT";
+    @extend .title-main;
+    color: $background-word;
+    transform: rotate(90deg);
+    position: absolute;
+    //left: rem(10);
+    font-size: rem(160);
+    top: rem(160);
+    left: rem(71);
+    transform-origin: left;
+    line-height: 0;
+}
+
+.c-programs{
+    display: block;
+    margin-top: rem(50);
+
+}
+.c-programs__boxs{
+    position: relative;
+    width: rem(230);
+   height: rem(210);
+    padding: rem(10);
+    margin: 0 auto;
+
+}
+
+.cross{
+    position: absolute;
+    top:rem(173);
+}
+
+/*2й блок*/
+
+.orange:before {
+    content: "1";
+    font-size: rem(25);
+}
+.c-team {
+    position: relative;
+}
+.c-teams{
+    position: relative;
+}
+.c {
+    margin-top: rem(30);
+}
+.c-trainer__bild{
+    display: none;
+}
+.c-team__title{
+    margin-top: rem(100);
+    width: rem(300);
+    margin: auto;
+}
+.c-trainer__bild{
+    display: none;
+}
+.c-teams{
+    width: rem(320);
+    margin: auto;
+    margin-top: rem(30);
+}
+.c-trainer__text{
+    flex-basis: rem(300);
+    color:$footer-text;
+    font-size: rem(14);
+    text-transform: none;
+    margin-top: rem(20);
+    margin-bottom: rem(15);
+    margin: 0 auto;
+
+}
+.c-trainer__block{
+    padding: 0 rem(15);
+}
+
+.c-team:before{
+    //display: none;
+    content:"TRAINER";
+    @extend .title-main;
+    color: $background-word;
+    transform: rotate(90deg);
+    position: absolute;
+    //left: rem(10);
+    font-size: rem(120);
+    top: rem(48);
+    left: rem(225);
+    transform-origin: left;
+    line-height: 0;
+}
+
+.c-name{
+    font-size: rem(24);
+}
+.c-team__recht{
+    width: rem(110);
+    background-color: black;
+    color: white;
+    padding: 0 rem(5);
+}
+.c-team__text{
+    color:$footer-text ;
+    font-size:rem(14) ;
+    margin-top: rem(20);
+}
+.с-one__info{
+    width: rem(230);
+    margin: 0 auto;
+    display: block;
+
+}
+.c-team__text{
+ text-transform: none;
+
+}
+
+
+@media screen and (min-width:480px) {
+
+    .wrapper__courses {
+        min-width: rem(480);
+        display: block;
+    }
+
+    .c-programs {
+        display: flex;
+        flex-basis: rem(480);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: rem(50);
+        padding: rem(10);
+    }
+    .c-programs__boxs {
+        flex-basis: 50%;
+    }
+    /*2block*/
+
+    .c-trainer__name {
+        width: rem(400);
+        margin: 0 auto;
+        display: block;
+        margin-top: rem(40);
+    }
+    .c-teams:before{
+        content:"";
+        display: block;
+        width:rem(50);
+        height: rem(10);
+        background-color:black;
+        transform: rotate(90deg);
+        position: absolute;
+        left: rem(-100);
+        top:rem(-20);
+    }
+
+
+}
+@media screen and (min-width: 768px) {
+
+    .wrapper__courses {
+        min-width: rem(768);
+        display: block;
+        margin: auto;
+    }
+    .c-courses_table {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: rem(768);
+        justify-content: space-between;
+    }
+
+    .c-courses__text {
+        width: rem(300);
+        margin-left: rem(20);
+    }
+
+    .bild {
+        display: flex;
+        flex-basis: 50%;
+        margin-right: rem(30);
+    }
+    .c-programs {
+        display: flex;
+        flex-basis: rem(768);
+        justify-content: space-between;
+
+    }
+    .c-programs__boxs {
+        flex-basis: 50%;
+    }
+    /*2й  блок*/
+ .c-trainer{
+     display: flex;
+    flex-basis: rem(768);
+     margin-top: 0;
+     justify-content: space-around;
+
+ }
+
+    .c-trainer__name{
+        width: rem(200);
+        margin: rem(0);
+
+    }
+    .c-trainer__text{
+        display: flex;
+        flex-basis: rem(200);
+        color:$footer-text;
+        font-size: rem(14);
+        text-transform: none;
+
+        margin-bottom: rem(15);
+    }
+    .c-trainer__bild{
+        display: flex;
+
+    }
+    .c-name{
+        font-size: rem(18);
+        font-weight: rem(200);
+         }
+    .c-teams{
+        margin: rem(40) auto 0;
+    }
+
+
+
+
+    .c-teams:before{
+        content:"";
+        display: block;
+        width:rem(50);
+        height: rem(10);
+        background-color:black;
+        transform: rotate(90deg);
+        position: absolute;
+        left: rem(-7);
+        top:rem(-40);
+    }
+    .c-team:before{
+        //display: none;
+        content:"TRAINER";
+        //@extend .title-main;
+        color: $background-word;
+        transform: rotate(90deg);
+        position: absolute;
+        //left: rem(10);
+        font-size: rem(50);
+        top: rem(48);
+        //left: rem(675);
+        transform-origin: left;
+        line-height: 0;
+    }
+
+
+
+}
+@media screen and (min-width: 960px) {
+    .wrapper__courses {
+        min-width: rem(960);
+        display: block;
+        margin: auto;
+    }
+    .c-courses__text{
+        width: rem(360);
+        margin-left: rem(20);
+    }
+    .c-courses_table{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: rem(960);
+        justify-content: space-between;
+    }
+
+    .c-programs {
+        display: flex;
+        flex-basis: rem(960);
+        justify-content: space-between;
+    }
+    .c-programs__boxs {
+        flex-basis: 25%;
+    }
+/* 2  блок*/
+    .c-trainer{
+        display: flex;
+        flex-basis: rem(960);
+        padding: 0;
+        margin-top: 0;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        //padding: 0 rem(30);
+    }
+    .c-trainer__block{
+
+        padding: 0;
+       flex-basis: rem(300);
+    }
+
+    .c-trainer__name{
+        width: rem(280);
+        margin: rem(0) auto;
+    }
+    .c-trainer__text{
+
+        flex-basis: rem(300);
+        color:$footer-text;
+        font-size: rem(14);
+        text-transform: none;
+        margin-bottom: rem(15);
+    }
+    .c-trainer__bild{
+        display: flex;
+       flex-basis: rem(200);
+        margin: 0 auto;
+
+    }
+
+    .c-teams{
+        margin: rem(40) auto 0;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    .wrapper__courses {
+        min-width: rem(1024);
+        display: block;
+        margin: auto;
+    }
+    .c-courses__text {
+        width: rem(275);
+        //margin-right: rem(200);
+    }
+    .c-courses_table {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: rem(1024);
+        justify-content: space-between;
+    }
+    .c-box__text{
+        width: rem(300);
+    }
+
+    .c-programs {
+        display: flex;
+        flex-basis: rem(1024);
+        justify-content: space-between;
+    }
+    .c-programs__boxs {
+        flex-basis: 25%;
+    }
+    .c-courses__item:before{
+        //display: none;
+        content:"GOIT";
+        //@extend .title-main;
+        color: $background-word;
+        transform: rotate(90deg);
+        position: absolute;
+        //left: rem(10);
+        font-size: rem(160);
+        top: rem(160);
+        left: rem(481);
+        transform-origin: left;
+        line-height: 0;
+    }
+    .c-courses__box-text::before{
+        content:"";
+        display: block;
+        width:rem(50);
+        height: rem(10);
+        background-color:black;
+        //margin-top: rem(5);
+    }
+
+}
+@media screen and (min-width: 1144px) {
+    .wrapper__courses {
+        min-width: rem(1140);
+        display: block;
+        margin: auto;
+    }
+    .c-courses{
+        display: flex;
+        flex-basis: rem(1440);
+        justify-content: space-between;
+    }
+    .c-courses_table{
+        flex-basis: 70%;
+    }
+    .c-courses__text{
+        width: rem(200);
+        margin-left: rem(65);
+    }
+    .c-courses__box-text::before{
+        margin-bottom: rem(-17);
+    }
+
+    .c-programs {
+        display: flex;
+        flex-basis: 30%;
+    }
+    .c-programs__boxs {
+        flex-basis:50%;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-bottom: rem(15);
+
+
+        padding: rem(0);
+    }
+    //* 2  блок*/
+    .c-trainer__big {
+    display: block;
+   //position:relative;
+    width: rem(600);
+    padding: 0;
+    margin-top: 0;
+}
+    .c-trainer__block{
+        display: flex;
+        flex-basis: rem(600);
+        margin:  rem(0) rem(0) rem(50) rem(0);
+    }
+    .one__block{
+        flex-direction: row-reverse;
+    }
+.two_block{
+    display: flex;
+    flex-basis: rem(300);
+    flex-direction: row-reverse;
+    flex-direction: column;
+}
+    .c-trainer__name{
+        margin-top: rem(50);
+    }
+
+    .three-trainer{
+        margin-right: rem(0);
+    }
+
+    .c-trainer__name{
+        margin: rem(20) 0;
+    }
+
+
+}
+
+
+
