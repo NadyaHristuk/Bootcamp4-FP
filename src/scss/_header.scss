@@ -74,6 +74,7 @@
         font-size: rem(13);
         padding: rem(0) rem(10);
         position: relative;
+        background-color: transparent;
     }
     .burger-menu {
         display: none;
@@ -132,7 +133,7 @@
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
     .header {
         justify-content: flex-start;
     }
