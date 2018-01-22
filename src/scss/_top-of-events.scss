@@ -1,0 +1,347 @@
+sup {
+    font-size: rem(7);
+}
+
+
+.a-events-wrapper {
+    min-width: rem(320);
+    max-width: rem(1140);
+    padding: rem(15);
+    margin-top: rem(50);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.a-top-block {
+    margin-bottom: rem(30);
+}
+
+.a-top-info-wrapper {
+    margin-bottom: rem(15);
+}
+
+.a-top-title {
+    font-size: rem(46);
+    line-height: rem(60);
+    position: relative;
+
+}
+
+.a-top-info-wrapper p {
+    text-transform: none;
+}
+
+.a-text-fat {
+    font-family: "AcromBold" ,sans-serif;;
+    color: black;
+    font-weight: 900;
+}
+
+//Contack me form
+
+.a-form-sidebar {
+    background-color: #181c27 ;
+    padding-top: rem(40);
+    padding-left: rem(40);
+    padding-bottom: rem(40);
+    padding-right: rem(40);
+    max-width: rem(457);
+    margin: 0 auto;
+
+}
+
+.a-title-third--form {
+    color: $white;
+    font-size: rem(16);
+    font-weight: bold;
+    font-family: "Acrom" ,sans-serif;
+    text-transform: uppercase;
+    line-height: rem(24);
+    text-align: center;
+}
+
+.a-text-bold--form {
+    color: $dark-blue ;
+    margin-top: rem(29);
+    margin-bottom: rem(20);
+    text-transform: inherit;
+    font-size: rem(12);
+    text-align: center;
+}
+
+
+.a-input {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #32353f ;
+    line-height: rem(40);
+    color: $white;
+    font-size: rem(15);
+    margin-bottom: rem(15);
+
+
+
+}
+
+
+
+.a-input::placeholder {
+    @extend .text-small;
+    color: $white;
+    text-transform: inherit;
+    font-size: rem(14);
+    text-align: center;
+}
+
+.a-input[type=email] {
+    @extend .text-small;
+    color: $white;
+    text-transform: none;
+    font-size: rem(14);
+    text-align: center;
+
+}
+
+.a-form-button {
+    display: block;
+    margin: auto;
+    border: none;
+    font-weight: 900;
+    font-size: rem(12);
+    text-align: center;
+    padding: rem(16.5) rem(54)
+}
+//contact me form end
+
+.a-button-bottom {
+    display: block;
+    margin: auto;
+    border: none;
+    font-weight: 900;
+    font-size: rem(12);
+    text-align: center;
+    padding: rem(16.5) rem(54);
+}
+
+.a-img-wrapper {
+    display: none;
+}
+
+.a-bot-info-wrapper {
+    margin-bottom: rem(15);
+}
+
+.a-bot-info-wrapper h3 {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(24);
+    text-transform: uppercase;
+    line-height: rem(30);
+    color: $title;
+    margin-bottom: rem(10);
+}
+
+.a-bot-info-wrapper p {
+    text-transform: none;
+    font-size: rem(14);
+}
+
+.a-how-to-find__wrapper h4, p {
+    text-transform: none;
+}
+
+.a-how-to-find__wrapper h4 {
+    font-family: "AcromBold" ,sans-serif;
+    font-size: rem(16);
+    color: $title;
+    margin-bottom: rem(10);
+}
+
+.a-how-to-find__wrapper p {
+    font-size: rem(14);
+}
+
+.a-how-to-find__wrapper div {
+    margin-bottom: rem(10);
+}
+
+@media (min-width: 768px) {
+    .a-how-to-find__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 980px){
+    .a-events-wrapper {
+        text-align: left;
+    }
+
+    .a-top-block {
+        display: flex;
+    }
+
+    .a-top-title {
+        font-size: rem(60);
+    }
+
+    .a-top-info-wrapper p.a-small-contaier:first-of-type {
+        margin-bottom: rem(10);
+    }
+
+    .a-bottom-block {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .a-img-wrapper {
+        display: block;
+        width: 40%;
+    }
+
+    .a-img-options {
+        width: 100%;
+    }
+
+    .a-bot-info-wrapper {
+        width: 36%;
+    }
+
+    .a-how-to-find__wrapper {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 14.6%;
+        margin: 0;
+    }
+
+    .a-button-bottom {
+        padding: rem(16.5) rem(15);
+
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .a-events-wrapper {
+        padding: 0;
+        margin-top: rem(100);
+    }
+
+    .a-top-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(200);
+    }
+
+    .a-top-info-wrapper {
+        max-width: rem(595);
+    }
+
+    .a-top-title {
+        font-size: rem(100);
+        line-height: rem(100);
+        margin-bottom: rem(20);
+    }
+
+    .a-top-title::before {
+        content: '<h>';
+        font-family: "Acrom" ,sans-serif;
+        font-size: rem(10);
+        font-weight: 400;
+        color: #1b4371;
+        position: absolute;
+        left: rem(4);
+        top: rem(-74);
+        text-transform: none;
+    }
+
+    .a-top-title::after {
+        content: '</h>';
+        font-family: "Acrom" ,sans-serif;
+        font-size: rem(10);
+        font-weight: 400;
+        color: #1b4371;
+        position: absolute;
+        right: rem(0);
+        bottom: rem(-46);
+        text-transform: none;
+        display: block;
+    }
+
+    .a-small-contaier {
+        width: 83.4%;
+        margin-bottom: rem(23);
+    }
+
+    .a-smaller-container {
+        width: 71.5%;
+    }
+
+    .a-form-sidebar {
+        width: 39.9%;
+        max-height: rem(400);
+        max-width: rem(457);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .a-text-bold--form {
+        margin-top: rem(40);
+
+    }
+
+    .a-input {
+        margin-bottom: rem(30);
+    }
+
+}
+
+@media (min-width: 1140px) {
+    .a-top-block {
+        margin-bottom: rem(290);
+    }
+
+    .a-top-title {
+        margin-bottom: rem(47);
+    }
+
+    .a-small-contaier {
+        margin-bottom: rem(36);
+    }
+
+    .a-bottom-block {
+        justify-content: space-between;
+    }
+
+    .a-bot-info-wrapper {
+        width: rem(326);
+    }
+
+    .a-bot-info-wrapper h3 {
+        margin-bottom: rem(39);
+    }
+
+    .a-bot-info-wrapper p {
+        width: rem(316);
+    }
+
+    .a-form-sidebar {
+        max-height: rem(465);
+        padding-right: rem(91);
+        padding-left: rem(92);
+    }
+
+        .a-button-bottom {
+        padding: rem(16.5) rem(21);
+    }
+
+}
