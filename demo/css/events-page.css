@@ -308,6 +308,9 @@ img {
 	right: 50%;
 	-webkit-transform: translate(50%);
 	transform: translate(50%);
+	font-weight: bold;
+	z-index: 1;
+	width: 100%;
 }
 
 .nav-list--show {
@@ -318,6 +321,12 @@ img {
 .nav__link {
 	text-decoration: none;
 	font-size: 0.75rem;
+	color: #6b6f7a;
+}
+
+.nav__item {
+	background-color: #feffff;
+	padding: 0.3125rem 0;
 }
 
 /*.container {
@@ -636,15 +645,13 @@ WAAAAGH!!!*/
 .footer-social__item,
 .footer-list__item {
 	list-style: none;
+	color: #65666a;
+	font-size: 0.875rem;
+	cursor: pointer;
 }
 
 .footer__list {
 	padding-top: 0.3125rem;
-}
-
-.footer-list_link {
-	color: #65666a;
-	font-size: 0.875rem;
 }
 
 .footer_btn {
@@ -689,6 +696,75 @@ WAAAAGH!!!*/
 	margin-top: 0.875rem;
 }
 
+.modal.large {
+	max-width: 680px;
+	max-height: 550px;
+	overflow-y: scroll;
+	padding: 20px;
+}
+
+.modal {
+	position: fixed;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	outline: 0;
+	opacity: 0;
+	background-color: #fff;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 458px;
+	min-width: 300px;
+	height: auto;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	padding: 60px;
+}
+
+.popup__close {
+	width: 21px;
+	height: 19px;
+	background: url(../images/close.png) no-repeat;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	cursor: pointer;
+	opacity: .5;
+	font-size: 30px;
+}
+
+.modal-head h4 {
+	color: #000;
+	font-family: "Acrom" ,sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 42px;
+	text-transform: uppercase;
+}
+
+.modal-content {
+	text-align: justify;
+}
+
+.modal-content p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	color: #000;
+	font-size: 1rem;
+	font-family: "Acrom" ,sans-serif;
+}
+
+.modal--show {
+	display: block;
+	opacity: 1;
+}
+
 @media (min-width: 320px) {
 
 .event-page-blocks {
@@ -728,6 +804,7 @@ WAAAAGH!!!*/
 	font-size: 0.8125rem;
 	padding: 0rem 0.625rem;
 	position: relative;
+	background-color: transparent;
 }
 
 .burger-menu {
@@ -736,6 +813,7 @@ WAAAAGH!!!*/
 
 .nav__link {
 	font-size: 0.625rem;
+	color: #000000;
 }
 
 .nav__link:hover {
@@ -1071,7 +1149,7 @@ WAAAAGH!!!*/
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
 
 .header {
 	-webkit-box-pack: start;
