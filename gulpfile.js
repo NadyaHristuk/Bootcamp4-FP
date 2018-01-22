@@ -82,12 +82,10 @@ gulp.task('fonts', () => {
       stream: true
     }));
 });
-
 gulp.task ('js', () => {
   return gulp.src('./src/js/**/*.js')
     .pipe(gulp.dest('./dist/js'))
 })
-
 // Таск слежения за изменениями файлов
 gulp.task('watch', () => {
   // Следим за изменениями в любом html файле и вызываем таск 'html' на каждом изменении
