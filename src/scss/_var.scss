@@ -30,6 +30,7 @@ $background-word:rgba(0, 0, 0, .05);
     font-family: "Acrom";
     src: url("../fonts/Acrom W00 Regular.otf");
 }
+
 @font-face {
     //font-family: "AcromLight";
     font-family: "Hammersmithlight";
@@ -103,6 +104,7 @@ $background-word:rgba(0, 0, 0, .05);
     line-height: rem(21);
     color: $main-text;
 }
+
 
 /*Buttons *************/
 
@@ -257,12 +259,6 @@ img {
     width: 100%;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .wrapper {
     min-width: rem(320);
     max-width: rem(1140);
@@ -270,3 +266,4 @@ img {
     margin: 0 auto;
     position: relative;
 }
+
