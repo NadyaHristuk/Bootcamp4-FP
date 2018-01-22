@@ -43,16 +43,19 @@
 
 .footer-social__item, .footer-list__item {
     list-style: none;
+    color: $footer-link;
+    font-size: rem(14);
+    cursor: pointer;
 }
 
 .footer__list {
     padding-top: rem(5);
 }
 
-.footer-list_link{
-    color: $footer-link;
-    font-size: rem(14);
-}
+//.footer-list_link{
+//    color: $footer-link;
+//    font-size: rem(14);
+//}
 
 .footer_btn {
     font-size:  rem(12);
@@ -96,6 +99,70 @@
     margin-top: rem(14);
 }
 
+.modal.large {
+    max-width: 680px;
+    max-height: 550px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+.modal {
+    position: fixed;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    opacity: 0;
+    background-color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 458px;
+    min-width: 300px;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s;
+    padding: 60px;
+}
+
+.popup__close {
+    width: 21px;
+    height: 19px;
+    background: url(../images/close.png) no-repeat;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    opacity: .5;
+    font-size: 30px;
+}
+.modal-head h4 {
+    color: #000;
+    font-family: "Acrom" ,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+.modal-content {
+    text-align: justify;
+}
+
+.modal-content  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #000;
+    font-size: rem(16);
+    font-family: "Acrom" ,sans-serif;
+}
+
+
+.modal--show {
+    display: block;
+    opacity: 1;
+}
 @media (min-width: 768px) {
 
     .footer__top {
@@ -198,7 +265,7 @@
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
 
     .footer__main {
         display: flex;
@@ -225,6 +292,6 @@
     .footer__list {
         display: flex;
         justify-content: space-between;
-        flex-basis: 48%;
+        flex-basis: 55%;
     }
 }
