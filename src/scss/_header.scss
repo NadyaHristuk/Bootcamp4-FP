@@ -38,6 +38,9 @@
     top: rem(50);
     right: 50%;
     transform: translate(50%);
+    font-weight: bold;
+    z-index: 1;
+    width: 100%;
 }
 
 .nav-list--show {
@@ -48,6 +51,12 @@
     text-decoration: none;
     @extend .text-small;
     font-size: rem(12);
+    color: #6b6f7a;
+}
+
+.nav__item {
+    background-color: #feffff;
+    padding: rem(5) 0;
 }
 
 @media (min-width: 768px) {
@@ -70,6 +79,7 @@
         font-size: rem(13);
         padding: rem(0) rem(10);
         position: relative;
+        background-color: transparent;
     }
     .burger-menu {
         display: none;
@@ -77,6 +87,7 @@
 
     .nav__link {
         font-size: rem(10);
+        color: #000000;
     }
 
     .nav__link:hover {
@@ -127,7 +138,7 @@
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
     .header {
         justify-content: flex-start;
     }
