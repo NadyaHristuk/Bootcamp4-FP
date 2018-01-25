@@ -1,6 +1,6 @@
 .container__header-landing {
     min-height: rem(85);
-    background-color: #181c27;
+    //background-color: #181c27;
 }
 
 .wrapper__header {
@@ -44,7 +44,6 @@
         display: none;
         opacity: 0;
         order: 2;
-        font-weight: bold;
         z-index: 1;
         width: 100%;
         line-height: rem(32);
@@ -55,7 +54,8 @@
             text-align: center;
             padding: rem(15) 0;
             margin: rem(15) 0;
-            background-color: rgba(255,255,255,.07);
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid rgba(255,255,255,.1);
 
             a {
                 color: rgba(255,255,255,.4);

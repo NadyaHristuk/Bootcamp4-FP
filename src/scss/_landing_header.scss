@@ -1,161 +1,181 @@
-.header__posit {
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-}
-
-.header_background {
+.header {
     background-image: url("../images/header-bg-txt.jpg");
     background-color: #181c27;
     background-repeat: no-repeat;
-    background-position: 29% 0;
+    background-position: center;
     background-size:cover ;
     position: relative;
-}
+    text-align: center;
+    overflow: hidden;
 
-.header_footer {
-    color: #9f9fa1;
-    font-family: "Acrom", sans-serif;
-    font-size: rem(14);
-}
+    &_footer {
+        color: #9f9fa1;
+        font-family: "Acrom", sans-serif;
+        font-size: rem(14);
+    }
 
-.header_name {
-    padding-bottom: 50px;
-    font-family: "AcromExtraBold", sans-serif;
-    position: relative;
-    color: white;
-    font-size: rem(88);
-    line-height: rem(90);
-}
+    &_name {
+        padding-bottom: 50px;
+        font-family: "AcromExtraBold", sans-serif;
+        position: relative;
+        color: white;
+        font-size: rem(80);
+        line-height: rem(90);
+        display: inline-block;
 
-.header_name:before {
-    content: "<h>";
-    color: #1b4371;
-    font-size: 10px;
-    position: absolute;
-    left: rem(10);
-    font-family: "Acrom", sans-serif;
-    top: rem(-30);
-}
+        &:before {
+            content: "<h>";
+            color: #1b4371;
+            font-size: 10px;
+            position: absolute;
+            left: rem(0);
+            top: rem(-25);
+            font-family: "Acrom", sans-serif;
+        }
 
-.header_name:after{
-    content: "<h>";
-    color: #1b4371;
-    font-size: 10px;
-    position: absolute;
-    right: rem(10);
-    bottom: rem(-6);
-    font-family: "Acrom", sans-serif;
-}
+        &:after{
+            content: "</h>";
+            color: #1b4371;
+            font-size: 10px;
+            position: absolute;
+            right: rem(0);
+            bottom: rem(15);
+            font-family: "Acrom", sans-serif;
+        }
+    }
 
-.header_image {
-    display: none;
+    &_image {
+        display: none;
+    }
 }
 
 @media (min-width: 480px) {
 
     .header_name{
         font-size: rem(140);
-       // width: rem();
         line-height:rem(130);
-    }
-    .header_name:after{
-        bottom: -40px;
-        font-size: rem(15);
-    }
-    .header_name:before{
-        top: -60px;
-        font-size: rem(15);
+
+        &:after{
+            bottom: -40px;
+            font-size: rem(15);
+        }
+
+        &:before{
+            top: -60px;
+            font-size: rem(15);
+        }
     }
 }
+
 @media (min-width: 768px) {
 
-    .header_image {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 13%;
-        width: rem(440);
-        left: 41%;
+    .header {
+        &_image {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            right: rem(10);
+            bottom: 0;
+        }
 
+        &_name {
+            display: block;
+            line-height: rem(100);
+            font-size: rem(95);
+            width: rem(270);
+            text-align: left;
+
+            &:before {
+                font-size: rem(15);
+            }
+
+            &:after {
+                font-size: rem(15);
+                right: rem(-60);
+                bottom: rem(8);
+            }
+        }
+
+        &__posit {
+            padding-top: rem(180);
+        }
+
+        &_footer {
+            text-align: left;
+        }
     }
-    .header_name:after {
-        display: none;
-    }
-    .header_name:before {
-        font-size: rem(15);
-    }
-    .header_name {
-        line-height: rem(94);
-        font-size: rem(88);
-        width: rem(270);
-        left: 12%;
-    }
+
     .name {
         width: rem(100);
     }
-    .header__posit {
-        padding-top: rem(180);
-    }
-    .header_footer {
-        margin-left: rem(57);
-        text-align: left;
-        //padding-left: 0px;
-    }
-    .header_backgroud {
-        background-position: 45% 50%;
-
-    }
-
 }
 
 @media (min-width: 960px) {
-    .header_image {
-        left: 45%;
-    }
 
-    .header_name {
-        font-size: rem(85);
-    }
+    .header {
+        &_name {
+            font-size: rem(120);
+            line-height: rem(130);
 
-    .header_footer {
-        text-align: left;
+            &:after {
+                right: rem(-135);
+                bottom: rem(-6);
+            }
+        }
     }
 }
 
-        @media (min-width: 1024px) {
-    .header_image{
-        width: rem(450);
-        left: rem(550);
+@media (min-width: 1024px) {
+    .header {
+        &_image {
+            bottom: rem(0);
+        }
+
+        &_name {
+            font-size: rem(130);
+            line-height: rem(140);
+
+            &:after {
+                right: rem(-165);
+                bottom: rem(-8);
+            }
+        }
     }
-    .header_name{
-        font-size: rem(170);
-        line-height:rem(160);
-    }
- .header_name:before{
-     font-size: rem(18);
- }
 }
-    @media (min-width: 1140px) {
-        .header_name{
+
+@media (min-width: 1170px) {
+    .wrapper_landing-header {
+        padding: rem(100) rem(20);
+    }
+
+    .header {
+        &_image {
+            right: rem(-40);
+        }
+
+        &_name {
+            width: rem(450);
             font-size: rem(150);
-            line-height: rem(150);
+            line-height: rem(160);
+
+            &:after {
+                right: rem(-45);
+                bottom: rem(-18);
+            }
         }
-        .header_image{
-            width: rem(500);
-            left: rem(600);
-        }
-        .header_footer{
-           font-size: rem(20);
-            margin-left: rem(130);
-        }
-        .header__posit{
-            padding-top: rem(180);
-        }
-        .header_name:before{
-            top: -70px;
+
+        &_footer {
+            font-size: rem(16);
         }
     }
+}
 
+@media (min-width: 1530px) {
+    .wrapper_landing-header {
+        padding: rem(250) rem(20);
+    }
 
+    .header_image {
+        right: rem(-135);
+    }
+}
