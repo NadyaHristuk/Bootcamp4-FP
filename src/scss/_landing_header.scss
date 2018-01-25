@@ -1,73 +1,58 @@
-.landing__header {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-}
-.header__posit
-{
-         margin: auto 0px;
-        padding-top: 25%;
-        padding-bottom: 15%;
-     position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
+.header__posit {
+    margin: 0 auto;
+    position: relative;
     text-align: center;
     overflow: hidden;
-
 }
 
-.header_backgroud{
+.header_background {
     background-image: url("../images/header-bg-txt.jpg");
+    background-color: #181c27;
     background-repeat: no-repeat;
-   background-position: 29% 0%;
+    background-position: 29% 0;
     background-size:cover ;
     position: relative;
-
-
 }
-.header_footer{
+
+.header_footer {
     color: #9f9fa1;
-    font-family: "Acrom";
+    font-family: "Acrom", sans-serif;
     font-size: rem(14);
-
 }
 
-.header_name{
+.header_name {
     padding-bottom: 50px;
-    font-family: "AcromExtraBold";
-    //text-align: center;
+    font-family: "AcromExtraBold", sans-serif;
     position: relative;
     color: white;
     font-size: rem(88);
     line-height: rem(90);
-    //display: inline;
-
 }
 
-.header_name:before{
+.header_name:before {
     content: "<h>";
     color: #1b4371;
     font-size: 10px;
     position: absolute;
-    left: 0;
-    font-family: "Acrom";
-    top: -37px;
+    left: rem(10);
+    font-family: "Acrom", sans-serif;
+    top: rem(-30);
 }
+
 .header_name:after{
     content: "<h>";
     color: #1b4371;
     font-size: 10px;
-
     position: absolute;
-    bottom:15%;
-    right: 0;
-    font-family: "Acrom";
-    bottom: -5px;
-
+    right: rem(10);
+    bottom: rem(-6);
+    font-family: "Acrom", sans-serif;
 }
-.header_image{
+
+.header_image {
     display: none;
 }
+
 @media (min-width: 480px) {
 
     .header_name{

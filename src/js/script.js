@@ -2,13 +2,13 @@
 
 
 function showMenu () {
-  document.querySelector('.nav-list').classList.toggle('nav-list--show');
+  document.querySelector('.nav-list').classList.toggle('nav-list__show');
 }
 
 document.querySelector('.burger-menu').addEventListener('click', showMenu);
 
 function showModal() {
-   document.querySelector(this.getAttribute('data-target')).classList.toggle('modal--show');
+   document.querySelector(this.getAttribute('data-target')).classList.toggle('modal__show');
 }
 
 var footerLi  = document.querySelectorAll('.footer-list__item');
