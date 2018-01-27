@@ -1975,7 +1975,7 @@ a {
 	margin: 0.625rem 0 0.625rem;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .c-career__info-item {
@@ -3521,6 +3521,7 @@ a {
 
 .c-gallery__img {
 	margin-bottom: 6.8125rem;
+	margin: auto;
 }
 
 .c-career__text--white {
